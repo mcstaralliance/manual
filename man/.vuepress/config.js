@@ -3,6 +3,7 @@ module.exports = {
   themeConfig: {
     sidebar: [
       ['/', '欢迎页'],
+      ['/', 'test page'],
     ],
     lastUpdated: '最后更新 ',
     repo: 'mcstaralliance/manual',
