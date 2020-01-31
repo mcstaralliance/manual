@@ -3,6 +3,7 @@ module.exports = {
   themeConfig: {
     sidebar: [
       ['/', '欢迎页'],
+      ['/FIRST.MD', '应注意的问题'],
     ],
     lastUpdated: '最后更新 ',
     repo: 'mcstaralliance/manual',
