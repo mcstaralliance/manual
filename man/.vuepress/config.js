@@ -4,6 +4,7 @@ module.exports = {
     sidebar: [
       ['/', '欢迎页'],
       ['/first', '应注意的问题'],
+      ['/second', '常见问题疑难解答'],
     ],
     lastUpdated: '最后更新 ',
     repo: 'mcstaralliance/manual',
