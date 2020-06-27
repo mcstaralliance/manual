@@ -3,9 +3,9 @@ module.exports = {
   themeConfig: {
     sidebar: [
       ['/', '欢迎页'],
-      ['/first', '应注意的问题'],
-      ['/second', '常见问题疑难解答'],
-      ['/third', '游戏内容疑难解答'],
+      ['/attention-question', '应注意的问题'],
+      ['/faq', '常见问题疑难解答'],
+      ['/ingame-ask-question', '游戏内容疑难解答'],
     ],
     lastUpdated: '最后更新 ',
     repo: 'mcstaralliance/manual',
