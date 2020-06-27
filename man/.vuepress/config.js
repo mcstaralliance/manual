@@ -13,7 +13,8 @@ module.exports = {
     docsDir: 'man',
     editLinks: true,
     docsDir: 'man',
-    editLinkText: '帮助我们完善这个页面'
+    editLinkText: '帮助我们完善这个页面',
+    smoothScroll: true
   },
   evergreen: true
 }
