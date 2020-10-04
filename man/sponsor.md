@@ -9,7 +9,7 @@ title: 首页
 1. 非常感谢你赞助服务器，但这不代表可以为所欲为。
 2. 如果你对赞助表有更好的建议，欢迎提出你的建议。
 
-:::
+:::  
 ::: tip
 如果你正在夜间使用电脑阅读，且浏览器为 Chrome,Firefox,以 Chromium 为核心的 Microsoft Edge 或 Safari 其中任意一种，请安装 [DarkReader](https://darkreader.org/) 来保护你的眼睛。
 如果你用的不是以上几种浏览器，也请你打开设备的护眼模式或换到以上几种浏览器。
