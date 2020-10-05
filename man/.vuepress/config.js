@@ -6,7 +6,7 @@ module.exports = {
       ['/attention-question', '应注意的问题'],
       ['/faq', '常见问题疑难解答'],
       ['/ingame-ask-question', '游戏内容疑难解答'],
-      ['/sponsor', '星域世界赞助表']
+      ['/sponsor', '星域世界赞助表'],
     ],
     lastUpdated: '最后更新 ',
     repo: 'mcstaralliance/manual',
