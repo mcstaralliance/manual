@@ -510,6 +510,14 @@ UU 物质生成机 **199元**
   - MVP 称号多种预设
   - MVP 脚步效果
 
+# <center>相关链接</center>
+
+::: tip
+
+[星域世界自助发卡平台](https://pay.mcstaralliance.com)
+
+:::
+
 ## <center>星域世界赞助条款</center>
 
  1. 赞助后概不退款。  
