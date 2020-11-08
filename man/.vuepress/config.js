@@ -18,5 +18,16 @@ module.exports = {
     editLinkText: '帮助我们完善这个页面',
     smoothScroll: true
   },
-  evergreen: true
+  plugins: {
+        "vuepress-plugin-auto-sidebar": {
+            titleMode: "titlecase",
+        },
+    },
+    markdown: {
+        plugins: [
+            "footnote",
+            "sup",
+            "sub"
+        ]
+    }
 }
