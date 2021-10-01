@@ -9,6 +9,7 @@ module.exports = {
       ['/ingame-ask-question', '游戏内容疑难解答'],
       ['/special-question', '特殊问题'],
       ['/sponsor', '星域世界赞助表'],
+      ['/price', '星域世界物品定价标准'],
     ],
     lastUpdated: '最后更新 ',
     repo: 'mcstaralliance/manual',
