@@ -43,7 +43,7 @@
 
  - 摆放魔力池时，我们非常不建议大量堆叠魔力池和火花。这会引起客户端 FPS 降低以及一些不必要的占用。
 
-  [![7rBMjg.png](https://s4.ax1x.com/2022/01/19/7rBMjg.png)](https://imgtu.com/i/7rBMjg)
+  ![](https://s4.ax1x.com/2022/01/19/7rBMjg.png)
 
 <details>
 <summary></summary>
