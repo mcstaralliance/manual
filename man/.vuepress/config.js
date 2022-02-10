@@ -3,7 +3,7 @@ module.exports = {
   themeConfig: {
     sidebar: [
       ['/', '欢迎页'],
-      ['/tutorial', '萌新教程'],
+      ['/newbie-tutorial', '萌新教程'],
       ['/attention-question', '应注意的问题'],
       ['/faq', '常见问题疑难解答'],
       ['/ingame-ask-question', '游戏内容疑难解答'],
