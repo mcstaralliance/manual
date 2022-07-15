@@ -10,7 +10,7 @@ title: 疑难解答
 :::
 
 ### 1. 显示 `Not Authenticated with skin.mcstaralliance.com`
-本服使用外置登录，您需要在 [星域联盟 Skin](https://skin.mcstaralliance.com) 注册账号，再到启动器里正确登录才可以正常进入游戏。
+本服使用外置登录，您需要在 [Celestia Skin](https://skin.mcstaralliance.com) 注册账号，再到启动器里正确登录才可以正常进入游戏。
 
 ### 2. 显示登入失败，身份验证正在停机维护
 你需要在启动器里删除您的账号并重新添加。如果还是进不去，请询问管理组。
@@ -63,7 +63,7 @@ Minecraft 特性。我们推荐客户端在加载时，不要点击或移动客�
 服务器限制一台设备登录服务器。如果你需要更换登录设备，需要使用令牌切换登录设备，请按照以下步骤操作：
 
 1. 在星域世界主群群文件「工具区」下载 `celestia.exe`。
-2. 向相关人员发送你在 星域联盟 Skin 的 UID 和用户名。
+2. 向相关人员发送你在 Celestia Skin 的 UID 和用户名。
 3. 在相关人员向你发送令牌后，打开 `celestia.exe`，并将令牌复制进去，按下 <kbd>Enter</kbd>。
 4. 启动客户端。
 
