@@ -8,7 +8,15 @@ module.exports = {
       ['/faq', '常见问题疑难解答'],
       ['/ingame-ask-question', '游戏内容疑难解答'],
       ['/special-question', '特殊问题'],
-      ['/sponsor', '星域世界赞助表'],
+      {
+          title: '星域世界赞助表',
+          collapsable: true,
+          children: [
+              '/sponsor/before-donate.html', '赞助前读',
+              '/sponsor/single-product.html', '首充礼包、单品和附魔',
+              '/sponsor/vip-plan.html', '会员'
+            ]
+      },
       ['/price', '星域世界物品定价标准'],
       ['/blocks-placing-standard', '星域世界功能性方块摆放规范']
     ],
