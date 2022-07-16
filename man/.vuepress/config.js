@@ -12,9 +12,9 @@ module.exports = {
           title: '星域世界赞助表',
           collapsable: true,
           children: [
-              '/sponsor/before-donate.html', '赞助前读',
-              '/sponsor/single-product.html', '首充礼包、单品和附魔',
-              '/sponsor/vip-plan.html', '会员'
+              '/sponsor/before-donate.html',
+              '/sponsor/single-product.html',
+              '/sponsor/vip-plan.html'
             ]
       },
       ['/price', '星域世界物品定价标准'],
