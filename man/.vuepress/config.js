@@ -16,6 +16,15 @@ module.exports = {
               '/sponsor/single-product.html',
               '/sponsor/vip-plan.html'
             ]
+      }, 
+     {
+          title: '灵梦幻域赞助表',
+          collapsable: true,
+          children: [
+              '/sponsor/before-donate.html',
+              '/sponsor_dml/single-product.html',
+              '/sponsor_dml/vip-plan.html'
+            ]
       },
       ['/price', '星域世界物品定价标准'],
       ['/blocks-placing-standard', '星域世界功能性方块摆放规范']
