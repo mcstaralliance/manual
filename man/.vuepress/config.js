@@ -6,8 +6,6 @@ module.exports = {
       ['/newbie-tutorial', '萌新教程'],
       ['/attention-question', '应注意的问题'],
       ['/faq', '常见问题疑难解答'],
-      ['/ingame-ask-question', '游戏内容疑难解答'],
-      ['/special-question', '特殊问题'],
       {
           title: '星域世界赞助表',
           collapsable: true,
