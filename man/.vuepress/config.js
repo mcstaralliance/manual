@@ -4,7 +4,6 @@ module.exports = {
     sidebar: [
       ['/', '欢迎页'],
       ['/newbie-tutorial', '萌新教程'],
-      ['/attention-question', '应注意的问题'],
       ['/faq', '常见问题疑难解答'],
       {
           title: '星域世界赞助表',
