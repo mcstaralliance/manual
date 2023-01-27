@@ -452,7 +452,7 @@ title: 会员
 
 ## MVP
 
-**首次赞助价格: 548 元 ** 
+**首次赞助价格: 548 元** 
 **续费价格：69 元**
 
 > 或者，你每周目可以通过 60 元累计赞助礼包免费续费一周目。详见 [这里](https://help.mcstaralliance.com/sponsor/single-product.html)。
@@ -606,7 +606,7 @@ title: 会员
 >
 > MVP+ 为本服最高等级会员。
 
-**首次赞助价格: 875 元 **  
+**首次赞助价格: 875 元**  
 **续费价格：69 元**
 
 > 或者，你每周目可以通过 60 元累计赞助礼包免费续费一周目。详见 [这里](https://help.mcstaralliance.com/sponsor/single-product.html)。详见 [这里](https://help.mcstaralliance.com/sponsor/single-product.html)。
