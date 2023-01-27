@@ -101,7 +101,7 @@ title: 会员
 
 > 游戏内显示为 VIP+
 
-**首次赞助价格: 88 元 **  
+**首次赞助价格: 88 元**  
 **续费价格：20 元**
 
 > 或者，你每周目可以通过 30 元累计赞助礼包免费续费一周目。详见 [这里](https://help.mcstaralliance.com/sponsor/single-product.html)。
