@@ -10,14 +10,11 @@ title: 疑难解答
 :::
 
 ### 1. 显示 `Not Authenticated with skin.mcstaralliance.com`
-本服使用外置登录，您需要在 [Celestia Skin](https://skin.mcstaralliance.com) 注册账号，再到启动器里正确登录才可以正常进入游戏。
+**请使用外置登录**。本服使用外置登录，您需要在 [Celestia Skin](https://skin.mcstaralliance.com) 注册账号，再到启动器里正确登录才可以正常进入游戏。
 
-### 2. 显示登入失败，身份验证正在停机维护
-你需要在启动器里删除您的账号并重新添加。如果还是进不去，请询问管理组。
+### 2. 显示登入失败，无效会话（请尝试重启你的游戏）
 
-### 3. 显示登入失败，无效会话（请尝试重启你的游戏）
-
-你需要在启动器里删除您的账号并重新添加。如果还是进不去，请询问管理组。
+**请使用外置登录**。**请使用外置登录**。**请使用外置登录**。
 
 ## 为什么我进不了皮肤站？
 
@@ -69,5 +66,5 @@ Minecraft 特性。我们推荐客户端在加载时，不要点击或移动客�
 
 ## 我想隐藏客户端左上角的 CID
 
-请使用 `NBTExplorer` 等工具编辑 `KagariVars.dat` 文件，使 `hideHUD` 的数值为 `true`（也就是 1）。
+请使用 `NBTExplorer` 等工具编辑 `KagariVars.dat` 文件，使 `hideHUD` 的数值为 1。
 
