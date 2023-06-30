@@ -1,6 +1,11 @@
 module.exports = {
   title: '星域联盟文档库',
   themeConfig: {
+    nav: [
+            { text: 'Celestia Skin（皮肤站）', link: 'https://skin.mcstaralliance.com' },
+            { text: '荣誉殿堂', link: 'https://mcstaralliance.netlify.app/honor' },
+            { text: '宵夜小店', link: 'https://pay.mcstaralliance.com' }
+        ],
     sidebar: [
       ['/', '欢迎页'],
       ['/newbie-tutorial', '萌新教程'],
