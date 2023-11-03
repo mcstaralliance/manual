@@ -1,5 +1,5 @@
 module.exports = {
-  title: '星域联盟文档库',
+  title: '星域世界文档库',
   themeConfig: {
     nav: [
             { text: 'Celestia Skin（皮肤站）', link: 'https://skin.mcstaralliance.com' },
