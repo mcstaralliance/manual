@@ -191,7 +191,7 @@ title: 会员
 > 游戏内显示为 SVIP+
 
 **首次赞助价格: 328 元**
-**续费价格：59 元**
+**续费价格：49 元（限时）~~59 元~~**
 
 > 或者，你每周目可以通过 60 元累计赞助礼包免费续费一周目。详见 [这里](https://help.mcstaralliance.com/sponsor/single-product.html)。
 
@@ -253,7 +253,7 @@ title: 会员
 ## MVP
 
 **首次赞助价格: 548 元**
-**续费价格：69 元**
+**续费价格：45 元（限时）~~69 元~~**
 
 > 或者，你每周目可以通过 60 元累计赞助礼包免费续费一周目。详见 [这里](https://help.mcstaralliance.com/sponsor/single-product.html)。
 
