@@ -1,49 +1,29 @@
 ---
-title: 会员
+title: 会员物品奖励
 ---
-
-# 灵梦幻域赞助表 - 会员
-
-会员后续可通过补差价升级。
+# 灵梦幻域赞助表 - 会员物品奖励
 
 ## 会员
+价格： **39** 元
+续费价格：9 元
 
-首次购买价格：39 
-
-续费价格：9
-
-内含:
-
-- 物品见 [宵夜小店](https://pay.mcstaralliance.com/)
-- 1000 金币
-- 飞行权限
+![vip](https://resource.mcstaralliance.com/images/dreamland/dml_vip.png)
 
 ## 超级会员
+价格： **129** 元
+续费价格：19 元
 
-首次购买价格：129 
-
-续费价格：29
-
-内含:
-
-- 物品见 [宵夜小店](https://pay.mcstaralliance.com/)
-- 10000 金币
-- 飞行权限
-- 专属刷怪场（内含凋灵骷髅、骷髅、僵尸、蜘蛛）
+![svip](https://resource.mcstaralliance.com/images/dreamland/dml_svip.jpg)
 
 ## 至尊会员
+价格： **259** 元
+续费价格：19 元
 
-首次购买价格：259
+![ultravip](https://resource.mcstaralliance.com/images/dreamland/dml_ultravip_1.jpg)
+![ultravip_2](https://resource.mcstaralliance.com/images/dreamland/dml_ultravip_2.png)
 
-续费价格：19
 
-内含:
 
-- 物品见 [宵夜小铺](https://pay.mcstaralliance.com/)
-- 50000 金币
-- 飞行权限
-- 专属刷怪场（内含凋灵骷髅、骷髅、僵尸、蜘蛛）
+## 购买渠道
 
-## 想要赞助
-
-请前往 [星域世界自助发卡平台](https://pay.mcstaralliance.com) 或联系服主。
+请直接通过 QQ 联系服主。
