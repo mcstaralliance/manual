@@ -53,14 +53,12 @@ title: 会员
 - 特殊权限
 
   - `/co i` 查询权限
-
   - `/fly` 飞行权限
-
   - `/tpa` `/tpahere ` `/home` 无冷却，无等待权限
-
   - `/tppos` 传送坐标权限
-
   - `/pp` 炫酷粒子权限
+  - `/ender` 随身末影箱权限
+  - `/workbench` 随身工作台权限
 
     > 展示视频：https://www.bilibili.com/video/BV1Qv411a7yi
 
@@ -123,6 +121,8 @@ title: 会员
   - `/tpa` `/tpahere ` `/home` 无冷却，无等待权限
   - `/tppos` 传送坐标权限
   - `/pp` 炫酷粒子权限
+  - `/ender` 随身末影箱权限
+  - `/workbench` 随身工作台权限
 
     > 展示视频：https://www.bilibili.com/video/BV1Qv411a7yi
 
@@ -187,6 +187,8 @@ title: 会员
   - `/tpa` `/tpahere ` `/home` 无冷却，无等待权限
   - `/tppos` 传送坐标权限
   - `/pp` 炫酷粒子权限
+  - `/ender` 随身末影箱权限
+  - `/workbench` 随身工作台权限
 
     > 展示视频：https://www.bilibili.com/video/BV1Qv411a7yi
 
@@ -256,6 +258,8 @@ title: 会员
   - `/tpa` `/tpahere ` `/home` 无冷却，无等待权限
   - `/tppos` 传送坐标权限
   - `/pp` 炫酷粒子权限
+  - `/ender` 随身末影箱权限
+  - `/workbench` 随身工作台权限
 
     > 展示视频：https://www.bilibili.com/video/BV1Qv411a7yi
 
@@ -326,6 +330,8 @@ title: 会员
   - `/tpa` `/tpahere ` `/home` 无冷却，无等待权限
   - `/tppos` 传送坐标权限
   - `/pp` 炫酷粒子权限
+  - `/ender` 随身末影箱权限
+  - `/workbench` 随身工作台权限
 
     > 展示视频：https://www.bilibili.com/video/BV1Qv411a7yi
 
@@ -403,6 +409,8 @@ title: 会员
   - `/tppos` 传送坐标权限
   - `/heal` 回复血量以及饱食度
   - `/pp` 炫酷粒子权限
+  - `/ender` 随身末影箱权限
+  - `/workbench` 随身工作台权限
 
     > 展示视频：https://www.bilibili.com/video/BV1Qv411a7yi
 
