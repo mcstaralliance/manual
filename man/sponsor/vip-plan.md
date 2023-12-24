@@ -124,8 +124,10 @@ title: 会员
   - `/ender` 随身末影箱权限
   - `/workbench` 随身工作台权限
 
-    > 展示视频：https://www.bilibili.com/video/BV1Qv411a7yi
+  - 免费联系服主授权指定 YSM 模型（需要你提供模型）
 
+    > 展示视频：https://www.bilibili.com/video/BV1Qv411a7yi
+  
   - 圈地价格 0.15 / 格，领地上限 10
 
 :::
@@ -190,8 +192,10 @@ title: 会员
   - `/ender` 随身末影箱权限
   - `/workbench` 随身工作台权限
 
-    > 展示视频：https://www.bilibili.com/video/BV1Qv411a7yi
+  - 免费联系服主授权指定 YSM 模型（需要你提供模型）
 
+    > 展示视频：https://www.bilibili.com/video/BV1Qv411a7yi
+  
   - 圈地价格 0.05 / 格，领地上限 15
 
 :::
@@ -261,8 +265,10 @@ title: 会员
   - `/ender` 随身末影箱权限
   - `/workbench` 随身工作台权限
 
-  - 永不饥饿
+  - 免费联系服主授权指定 YSM 模型（需要你提供模型）
 
+  - 永不饥饿
+  
     > 展示视频：https://www.bilibili.com/video/BV1Qv411a7yi
   
   - 随身末影箱权限，随身工作台权限
