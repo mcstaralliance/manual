@@ -16,15 +16,15 @@ Minecraft 由 Java 编写，所以你的电脑上也需要有 Java 才能运行 
 
 本服使用外置登录，你需要完成以下流程，才可以进入服务器：
 
-- 在 [Celestia Skin](https://skin.mcstaralliance.com) 注册账号
+1. 在 [Celestia Skin](https://skin.mcstaralliance.com) 注册账号
 
-- 根据皮肤站仪表盘的提示正确验证邮箱地址
+2. 根据皮肤站仪表盘的提示正确验证邮箱地址
 
-- 绑定 Fanbook
+3. 绑定 Fanbook
 
-  - 你可以在这里【 https://skin.mcstaralliance.com/user/link 】按照操作提示进行账号绑定操作。
+   > 你可以在这里【 [https://skin.mcstaralliance.com/user/link](https://skin.mcstaralliance.com/user/link) 】按照操作提示进行账号绑定操作。
 
-- 在启动器里 **正确** 使用外置登录
+4. 在启动器里 **正确** 使用外置登录
 
 如果你还需要进一步的教程，可以 [点击这里](https://docs.qq.com/doc/DYUVyb2lPRmhVV3ZN) 查看。
 
@@ -72,10 +72,6 @@ Minecraft 由 Java 编写，所以你的电脑上也需要有 Java 才能运行 
 即使在领地内，没有上锁的物品也有可能丢失，请一定要保护好自己的物品！发现物品丢失，请尽快联系管理组。
 
 :::
-
-## 加入一个公会吧
-
-WIP
 
 ## 还有其它问题？
 
