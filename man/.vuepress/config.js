@@ -30,7 +30,8 @@ module.exports = {
       },
       ['/price', '星域世界物品定价标准'],
       ['/blocks-placing-standard', '星域世界功能性方块摆放规范'],
-      ['/guild-manage', '星域世界公会事务']
+      ['/guild-manage', '星域世界公会事务'],
+      ['/private-server-support', '个人私有服务器承接'],
     ],
     lastUpdated: '最后更新 ',
     repo: 'mcstaralliance/manual',
