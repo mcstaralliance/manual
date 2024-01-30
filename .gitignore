@@ -1,0 +1,7 @@
+node_modules
+# VuePress default temp directory
+src/.vuepress/.temp
+# VuePress default cache directory
+src/.vuepress/.cache
+# VuePress default build output directory
+src/.vuepress/dist
