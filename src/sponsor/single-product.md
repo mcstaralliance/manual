@@ -228,4 +228,4 @@ title: 单品、礼包和附魔
 
 ## 想要赞助
 
-请前往 [星域世界自助发卡平台](https://pay.mcstaralliance.com) 或联系服主。
+请通过 QQ 联系服主。
