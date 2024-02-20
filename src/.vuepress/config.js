@@ -78,6 +78,10 @@ export default defineUserConfig({
       {
         text: '个人私有服务器承接',
         link: '/private-server-support'
+      },
+      {
+        text: '鸣谢名单',
+        link: '/acknowledgments'
       }
     ],
     docsRepo: 'mcstaralliance/manual',
