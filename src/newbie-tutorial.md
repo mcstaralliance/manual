@@ -20,13 +20,13 @@ Minecraft 由 Java 编写，所以你的电脑上也需要有 Java 才能运行 
 
 2. 根据皮肤站仪表盘的提示正确验证邮箱地址
 
-3. 在 [这里](https://skin.mcstaralliance.com/user/link) 按照操作提示绑定 Fanbook 账号，如果你没有 Fanbook 账号，就注册一个。
+3. 在 [这里](https://skin.mcstaralliance.com/user/link) 按照操作提示绑定 Fanbook 账号，如果你没有 Fanbook 账号，可以在页面里直接注册。
 
 4. 在启动器里 **正确** 使用外置登录，如果有疑惑可以 [点击这里](https://docs.qq.com/doc/DYUVyb2lPRmhVV3ZN) 查看更具体的教程。
 
    >  如果看完了还不是不明白，请务必在群里询问，大家非常乐意解答你的问题。
 
-**注意：本服不支持使用正版登录。**请务必在启动器内使用你刚刚注册的 Celestia Skin 账号登录。
+**注意：本服不支持使用正版登录。** 请务必在启动器内使用你刚刚注册的 Celestia Skin 账号登录。
 
 ## 如何圈地并给予权限
 
