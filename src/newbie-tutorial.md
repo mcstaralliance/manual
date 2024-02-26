@@ -8,7 +8,7 @@
 
 Minecraft 由 Java 编写，所以你的电脑上也需要有 Java 才能运行 Minecraft。
 
-你可以在群文件里找到 Java 的安装包。下载并安装即可。
+你可以在群文件里找到 Java 的安装包，下载并安装即可。Minecraft 1.18.2 版本应使用 Java 17。
 
 此外，你应当查看并同意 [星域世界用户服务协议](https://docs.qq.com/doc/DYVp3bG9aVHNOWWth) 和位于群文件的《隐私政策》和《个人信息保护政策》。
 
@@ -20,13 +20,13 @@ Minecraft 由 Java 编写，所以你的电脑上也需要有 Java 才能运行 
 
 2. 根据皮肤站仪表盘的提示正确验证邮箱地址
 
-3. 绑定 Fanbook
+3. 在 [这里](https://skin.mcstaralliance.com/user/link) 按照操作提示绑定 Fanbook 账号，如果你没有 Fanbook 账号，就注册一个。
 
-   > 你可以在这里【 [https://skin.mcstaralliance.com/user/link](https://skin.mcstaralliance.com/user/link) 】按照操作提示进行账号绑定操作。
+4. 在启动器里 **正确** 使用外置登录，如果有疑惑可以 [点击这里](https://docs.qq.com/doc/DYUVyb2lPRmhVV3ZN) 查看更具体的教程。
 
-4. 在启动器里 **正确** 使用外置登录
+   >  如果看完了还不是不明白，请务必在群里询问，大家非常乐意解答你的问题。
 
-如果你还需要进一步的教程，可以 [点击这里](https://docs.qq.com/doc/DYUVyb2lPRmhVV3ZN) 查看。
+**注意：本服不支持使用正版登录。**请务必在启动器内使用你刚刚注册的 Celestia Skin 账号登录。
 
 ## 如何圈地并给予权限
 
