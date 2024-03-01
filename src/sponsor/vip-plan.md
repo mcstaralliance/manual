@@ -21,7 +21,7 @@ title: 会员
 **首次赞助价格: 19 元**  
 **续费价格：9 元**
 
-::: tip 通过周目累计赞助礼包续费会员
+::: tip 温馨提示
 
 或者，你每周目可以通过 30 元累计赞助礼包免费续费一周目。详见 [这里](https://help.mcstaralliance.com/sponsor/single-product.html#%E5%B8%B8%E9%A9%BB%E5%91%A8%E7%9B%AE%E7%B4%AF%E8%AE%A1%E8%B5%9E%E5%8A%A9%E7%A4%BC%E5%8C%85)。
 
@@ -81,7 +81,7 @@ title: 会员
 **首次赞助价格: 68 元**  
 **续费价格：19 元**
 
-::: tip 通过周目累计赞助礼包续费会员
+::: tip 温馨提示
 
 或者，你每周目可以通过 30 元累计赞助礼包免费续费一周目。详见 [这里](https://help.mcstaralliance.com/sponsor/single-product.html#%E5%B8%B8%E9%A9%BB%E5%91%A8%E7%9B%AE%E7%B4%AF%E8%AE%A1%E8%B5%9E%E5%8A%A9%E7%A4%BC%E5%8C%85)。
 
@@ -155,7 +155,7 @@ title: 会员
 **首次赞助价格: 168 元**  
 **续费价格：39 元**
 
-::: tip 通过周目累计赞助礼包续费会员
+::: tip 温馨提示
 
 或者，你每周目可以通过 60 元累计赞助礼包免费续费一周目。详见 [这里](https://help.mcstaralliance.com/sponsor/single-product.html#%E5%B8%B8%E9%A9%BB%E5%91%A8%E7%9B%AE%E7%B4%AF%E8%AE%A1%E8%B5%9E%E5%8A%A9%E7%A4%BC%E5%8C%85)。
 
@@ -235,7 +235,7 @@ title: 会员
 **首次赞助价格: 328 元**  
 **续费价格：39 元**
 
-::: tip 通过周目累计赞助礼包续费会员
+::: tip 温馨提示
 
 或者，你每周目可以通过 60 元累计赞助礼包免费续费一周目。详见 [这里](https://help.mcstaralliance.com/sponsor/single-product.html#%E5%B8%B8%E9%A9%BB%E5%91%A8%E7%9B%AE%E7%B4%AF%E8%AE%A1%E8%B5%9E%E5%8A%A9%E7%A4%BC%E5%8C%85)。
 
@@ -320,7 +320,7 @@ title: 会员
 **首次赞助价格: 548 元**  
 **续费价格：39 元**
 
-::: tip 通过周目累计赞助礼包续费会员
+::: tip 温馨提示
 
 或者，你每周目可以通过 60 元累计赞助礼包免费续费一周目。详见 [这里](https://help.mcstaralliance.com/sponsor/single-product.html#%E5%B8%B8%E9%A9%BB%E5%91%A8%E7%9B%AE%E7%B4%AF%E8%AE%A1%E8%B5%9E%E5%8A%A9%E7%A4%BC%E5%8C%85)。
 
@@ -509,7 +509,7 @@ title: 会员
 
 - 每周目两次创造 / 珍贵物品抽奖池抽奖机会
 
-  > 内含永恒魔力池、创造魔力石板、创造 RF 电源、无尽装备等。没有垃圾。
+  内含`永恒魔力池、创造魔力石板、创造 RF 电源、无尽装备等。没有垃圾。
 
 - 每周目指定一名玩家，赠送 VIP 到 MVP 任意一级会员。或免除一次续费。
 
