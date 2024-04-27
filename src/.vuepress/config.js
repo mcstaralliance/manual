@@ -49,10 +49,6 @@ export default defineUserConfig({
         collapsible: true,
         children: [
           {
-            text: '赞助前读',
-            link: '/sponsor_dml/before-donate'
-          },
-          {
             text: '单品',
             link: '/sponsor_dml/single-product'
 
