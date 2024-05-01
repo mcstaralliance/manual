@@ -1,4 +1,4 @@
-![image](https://github.com/Dabai1025/manual/assets/53298022/3d87f095-c560-4219-a5f3-5842842a278d)---
+---
 title: 会员
 ---
 
