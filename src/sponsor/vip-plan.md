@@ -427,7 +427,7 @@ title: 会员
 
 :::
 
-## 永久 MVP Plus
+## MVP Plus
 
 > 游戏内显示为 MVP+
 >
