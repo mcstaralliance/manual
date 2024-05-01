@@ -76,7 +76,7 @@ title: 会员
   
   - `/fly` 飞行权限
   
-  - `/tpa` `/tpahere ` `/home` 无冷却，无等待权限
+  - `/tpa` `/tpahere` `/home` 无冷却，无等待权限
   
   - `/tppos` 传送坐标权限
   
@@ -156,7 +156,7 @@ title: 会员
   
   - `/fly` 飞行权限
   
-  - `/tpa` `/tpahere ` `/home` 无冷却，无等待权限
+  - `/tpa` `/tpahere` `/home` 无冷却，无等待权限
   
   - `/tppos` 传送坐标权限
 
@@ -234,7 +234,7 @@ title: 会员
   
   - `/fly` 飞行权限
   
-  - `/tpa` `/tpahere ` `/home` 无冷却，无等待权限
+  - `/tpa` `/tpahere` `/home` 无冷却，无等待权限
   
   - `/tppos` 传送坐标权限
 
@@ -317,7 +317,7 @@ title: 会员
   
   - `/fly` 飞行权限
   
-  - `/tpa` `/tpahere ` `/home` 无冷却，无等待权限
+  - `/tpa` `/tpahere` `/home` 无冷却，无等待权限
   
   - `/tppos` 传送坐标权限
 
@@ -403,7 +403,7 @@ title: 会员
   
   - `/fly` 飞行权限
   
-  - `/tpa` `/tpahere ` `/home` 无冷却，无等待权限
+  - `/tpa` `/tpahere` `/home` 无冷却，无等待权限
   
   - `/tppos` 传送坐标权限
   
@@ -491,7 +491,7 @@ title: 会员
   
   - `/fly` 飞行权限
   
-  - `/tpa` `/tpahere ` `/home` 无冷却，无等待权限
+  - `/tpa` `/tpahere` `/home` 无冷却，无等待权限
   
   - `/tppos` 传送坐标权限
   
