@@ -38,3 +38,10 @@ title: 鸣谢名单
 - Tudor
 - zero6six
 - Ecaree
+- qing_kong
+- void
+- Omociloye
+- daoshen
+- Er_ZaiZai
+
+感谢以上玩家对星域世界的支持。
