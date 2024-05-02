@@ -21,3 +21,20 @@ title: 鸣谢名单
 
 - Sakura_moon
 - cy1015
+- pari
+- lengxi
+- Serumhhy
+- somygame
+- Y_XiaoXianG
+- MuHui233
+- SF_Returns
+- No_die
+- xinleiya
+- lansallyes
+- Valjeanzz
+- VerKaKa
+- qianbing
+- Wacom
+- Tudor
+- zero6six
+- Ecaree
