@@ -43,5 +43,9 @@ title: 鸣谢名单
 - Omociloye
 - daoshen
 - Er_ZaiZai
+- sakewind
+- qi_loos
+- GMengZhi
+- YeYe_Meo
 
 感谢以上玩家对星域世界的支持。
