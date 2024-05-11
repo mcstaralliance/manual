@@ -51,7 +51,7 @@ title: 鸣谢名单
 - WolfSister
 - Playmaker
 - zccz
-- qieseguang
+- qiseguang
 - kkcTS
 
 感谢以上玩家对星域世界的支持。
