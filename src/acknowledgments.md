@@ -20,6 +20,7 @@ title: 鸣谢名单
 ## 赞助玩家
 
 - Sakura_moon
+- Sakura_gase
 - cy1015
 - pari
 - lengxi
