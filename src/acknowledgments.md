@@ -47,5 +47,11 @@ title: 鸣谢名单
 - qi_loos
 - GMengZhi
 - YeYe_Meo
+- Begula
+- WolfSister
+- Playmaker
+- zccz
+- qieseguang
+- kkcTS
 
 感谢以上玩家对星域世界的支持。
