@@ -45,21 +45,6 @@ export default defineUserConfig({
         ],
       },
       {
-        text: '灵梦幻域赞助表',
-        collapsible: true,
-        children: [
-          {
-            text: '单品',
-            link: '/sponsor_dml/single-product'
-
-          },
-          {
-            text: 'VIP制度',
-            link: '/sponsor_dml/vip-plan'
-          },
-        ],
-      },
-      {
         text: '物品定价标准',
         link: '/price'
       },

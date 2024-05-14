@@ -54,5 +54,6 @@ title: 鸣谢名单
 - zccz
 - qiseguang
 - kkcTS
+- yuxin55
 
 感谢以上玩家对星域世界的支持。
