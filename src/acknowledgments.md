@@ -61,5 +61,10 @@ title: 鸣谢名单
 - 999666
 - HalfAwake
 - Sayoui
+- Pastoraldog
+- Sthuas
+- oppo
+- toy_key
+- wth
 
 感谢以上玩家对星域世界的支持。
