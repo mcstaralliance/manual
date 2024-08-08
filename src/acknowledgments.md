@@ -59,5 +59,7 @@ title: 鸣谢名单
 - kkcTS
 - yuxin55
 - 999666
+- HalfAwake
+- Sayoui
 
 感谢以上玩家对星域世界的支持。
