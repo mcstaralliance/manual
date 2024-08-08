@@ -72,7 +72,6 @@ title: 鸣谢名单
 
 - yu_zi233
 - Chao_BaBa
-
 - BAMBOOZHU
 - DeemoWJ
 - Dean233
@@ -113,7 +112,7 @@ title: 鸣谢名单
 - qyh07
 - Sora
 - shui_yun_233
-- Taurus__
+- Taurus\_\_
 - Tentacle3PP
 - TokaiTeio11
 - Tuerha
@@ -122,7 +121,6 @@ title: 鸣谢名单
 - VhenHY
 - wiky
 - Heart_Love
-- wss
 - kevin123
 - xigai_sama
 
