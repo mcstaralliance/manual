@@ -66,5 +66,64 @@ title: 鸣谢名单
 - oppo
 - toy_key
 - wth
+- MHJSAJO
+
+---
+
+- yu_zi233
+- Chao_BaBa
+
+- BAMBOOZHU
+- DeemoWJ
+- Dean233
+- Ehome_2Aizi
+- Flower_Luo
+- jelly
+- jerry
+- huahua233
+- hlzou
+- HiImFaker
+- HG_zhize
+- hasagei
+- Hacker
+- Jty
+- K9Y
+- jzby123
+- Kazuaya
+- Kevin_James
+- Kinto
+- kiraazusa
+- kldly
+- labisi
+- lmkais
+- little_curry
+- Ln_diandian
+- LSS
+- luis
+- lunbate
+- Luo_Bo
+- Msir
+- mc_xiaoxin
+- MMDGBB
+- NCXiedi
+- menu123
+- MikogamiMikan
+- Omociloye
+- qst_hyqs
+- qyh07
+- Sora
+- shui_yun_233
+- Taurus__
+- Tentacle3PP
+- TokaiTeio11
+- Tuerha
+- txy
+- TomBlast
+- VhenHY
+- wiky
+- Heart_Love
+- wss
+- kevin123
+- xigai_sama
 
 感谢以上玩家对星域世界的支持。
