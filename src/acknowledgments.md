@@ -10,6 +10,7 @@ title: 鸣谢名单
 
 ## 特殊贡献者
 
+- Da_Bai_1025
 - zero6six
 - qianbing
 - Wacom
@@ -55,5 +56,6 @@ title: 鸣谢名单
 - qiseguang
 - kkcTS
 - yuxin55
+- 999666
 
 感谢以上玩家对星域世界的支持。

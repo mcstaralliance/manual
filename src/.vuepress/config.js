@@ -18,8 +18,8 @@ export default defineUserConfig({
         link: 'https://celestia.skin/',
       },
       {
-        text: '荣誉殿堂',
-        link: 'https://mcstaralliance.netlify.app/honor',
+        text: '鸣谢名单',
+        link: 'https://help.mcstaralliance.com/acknowledgments',
       }
     ],
     sidebar: [
