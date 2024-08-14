@@ -48,6 +48,10 @@ export default defineUserConfig({
             text: 'VIP制度',
             link: '/sponsor/vip-plan'
           },
+		  {
+            text: '六周年赞助活动',
+            link: '/sponsor/6th-anniversary'
+          }
         ],
       },
       {
