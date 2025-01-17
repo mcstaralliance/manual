@@ -2,6 +2,8 @@
 title: 赞助表
 ---
 
+# 星域世界赞助表
+
 **如果没有特殊说明，本列表内的单品、礼包和附魔时效均为长期，即每周目都可领取。**
 
 赞助请通过 QQ(934664404) 联系服主。群主就是服主。
@@ -283,7 +285,7 @@ title: 赞助表
 
 ::: tip 温馨提示
 
-或者，你每周目可以通过 30 元累计赞助礼包免费续费一周目。详见 [这里](https://help.mcstaralliance.com/sponsor/single-product.html#%E5%91%A8%E7%9B%AE%E7%B4%AF%E8%AE%A1%E8%B5%9E%E5%8A%A9%E7%A4%BC%E5%8C%85)。
+或者，你每周目可以通过 30 元累计赞助礼包免费续费一周目。详见 [这里](https://help.mcstaralliance.com/sponsor/#%E5%91%A8%E7%9B%AE%E7%B4%AF%E8%AE%A1%E8%B5%9E%E5%8A%A9%E7%A4%BC%E5%8C%85)。
 
 :::
 
@@ -369,7 +371,7 @@ title: 赞助表
 
 ::: tip 温馨提示
 
-或者，你每周目可以通过 30 元累计赞助礼包免费续费一周目。详见 [这里](https://help.mcstaralliance.com/sponsor/single-product.html#%E5%91%A8%E7%9B%AE%E7%B4%AF%E8%AE%A1%E8%B5%9E%E5%8A%A9%E7%A4%BC%E5%8C%85)。
+或者，你每周目可以通过 30 元累计赞助礼包免费续费一周目。详见 [这里](https://help.mcstaralliance.com/sponsor/#%E5%91%A8%E7%9B%AE%E7%B4%AF%E8%AE%A1%E8%B5%9E%E5%8A%A9%E7%A4%BC%E5%8C%85)。
 
 :::
 
@@ -457,7 +459,7 @@ title: 赞助表
 
 ::: tip 温馨提示
 
-或者，你每周目可以通过 60 元累计赞助礼包免费续费一周目。详见 [这里](https://help.mcstaralliance.com/sponsor/single-product.html#%E5%91%A8%E7%9B%AE%E7%B4%AF%E8%AE%A1%E8%B5%9E%E5%8A%A9%E7%A4%BC%E5%8C%85)。
+或者，你每周目可以通过 60 元累计赞助礼包免费续费一周目。详见 [这里](https://help.mcstaralliance.com/sponsor/#%E5%91%A8%E7%9B%AE%E7%B4%AF%E8%AE%A1%E8%B5%9E%E5%8A%A9%E7%A4%BC%E5%8C%85)。
 
 :::
 
@@ -546,7 +548,7 @@ title: 赞助表
 
 ::: tip 温馨提示
 
-或者，你每周目可以通过 60 元累计赞助礼包免费续费一周目。详见 [这里](https://help.mcstaralliance.com/sponsor/single-product.html#%E5%91%A8%E7%9B%AE%E7%B4%AF%E8%AE%A1%E8%B5%9E%E5%8A%A9%E7%A4%BC%E5%8C%85)。
+或者，你每周目可以通过 60 元累计赞助礼包免费续费一周目。详见 [这里](https://help.mcstaralliance.com/sponsor/#%E5%91%A8%E7%9B%AE%E7%B4%AF%E8%AE%A1%E8%B5%9E%E5%8A%A9%E7%A4%BC%E5%8C%85)。
 
 :::
 
@@ -639,7 +641,7 @@ title: 赞助表
 
 ::: tip 温馨提示
 
-或者，你每周目可以通过 60 元累计赞助礼包免费续费一周目。详见 [这里](https://help.mcstaralliance.com/sponsor/single-product.html#%E5%91%A8%E7%9B%AE%E7%B4%AF%E8%AE%A1%E8%B5%9E%E5%8A%A9%E7%A4%BC%E5%8C%85)。
+或者，你每周目可以通过 60 元累计赞助礼包免费续费一周目。详见 [这里](https://help.mcstaralliance.com/sponsor/#%E5%91%A8%E7%9B%AE%E7%B4%AF%E8%AE%A1%E8%B5%9E%E5%8A%A9%E7%A4%BC%E5%8C%85)。
 
 :::
 
