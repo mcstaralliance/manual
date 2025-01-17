@@ -32,46 +32,15 @@ export default defineUserConfig({
         link: '/newbie-tutorial'
       },
       {
-        text: '星域世界赞助表',
-        collapsible: true,
-        children: [
-          {
-            text: '赞助前读',
-            link: '/sponsor/before-donate'
-          },
-          {
-            text: '单品',
-            link: '/sponsor/single-product'
-
-          },
-          {
-            text: 'VIP制度',
-            link: '/sponsor/vip-plan'
-          },
-		  {
-            text: '六周年赞助活动',
-            link: '/sponsor/6th-anniversary'
-          }
-        ],
-      },
-      {
-        text: '物品定价标准',
-        link: '/price'
+        text: '赞助表',
+        link: '/sponsor'
       },
       {
         text: '功能性方块摆放规范',
         link: '/blocks-placing-standard'
       },
       {
-        text: '公会事务',
-        link: '/guild-manage'
-      },
-      {
-        text: '个人私有服务器承接',
-        link: '/private-server-support'
-      },
-      {
-        text: '鸣谢名单',
+        text: '鸣谢',
         link: '/acknowledgments'
       }
     ],
