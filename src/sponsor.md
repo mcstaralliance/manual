@@ -281,9 +281,7 @@ title: 赞助表
 
 内含:
 
-::: details 点击查看详情
-
-
+![VIP.png](https://s2.loli.net/2025/01/23/p8kjfydvHcaFbRI.png)
 
 - 2000 硬币
 
@@ -309,8 +307,6 @@ title: 赞助表
   
   - 加入满员服务器权限
 
-:::
-
 ## VIP Plus
 
 > 游戏内显示为 VIP+
@@ -326,9 +322,7 @@ title: 赞助表
 
 内含:
 
-::: details 点击查看详情
-
-
+![VIPplus.png](https://s2.loli.net/2025/01/23/PGD5T4VQjz1YMNp.png)
 
 - 3000 硬币
 
@@ -356,8 +350,6 @@ title: 赞助表
   
   - 领地上限 10
 
-:::
-
 ## SVIP
 
 **首次赞助价格: 168 元**  
@@ -371,9 +363,7 @@ title: 赞助表
 
 内含:
 
-::: details 点击查看详情
-
-
+![SVIP.png](https://s2.loli.net/2025/01/23/zK36kNP8bZ5InME.png)
 
 - 6500 硬币
 
@@ -398,8 +388,6 @@ title: 赞助表
     
   - 免费联系服主授权指定 YSM 模型（需要你提供模型）
 
-:::
-
 ## SVIP Plus
 
 > 游戏内显示为 SVIP+
@@ -415,9 +403,7 @@ title: 赞助表
 
 内含:
 
-::: details 点击查看详情
-
-
+![SVIPplus.png](https://s2.loli.net/2025/01/23/dYPstUOSmTfQy7A.png)
 
 - 8000 硬币
   
@@ -448,7 +434,7 @@ title: 赞助表
   
   - 领地上限 15
 
-:::
+
 
 ## MVP
 
@@ -463,9 +449,7 @@ title: 赞助表
 
 内含:
 
-::: details 点击查看详情
-
-
+![MVP.png](https://s2.loli.net/2025/01/23/l3pCkScgw1iZu8R.png)
 
 - 12000 硬币
 
@@ -498,8 +482,6 @@ title: 赞助表
   
   - 领地上限 20
 
-:::
-
 ## MVP Plus
 
 > 游戏内显示为 MVP+
@@ -510,9 +492,7 @@ title: 赞助表
 
 内含:
 
-::: details 点击查看详情
-
-
+![MVPplus.png](https://s2.loli.net/2025/01/23/s6NTSJgBnDLxQr3.png)
 
 - 16000 硬币
 
@@ -546,8 +526,6 @@ title: 赞助表
   - 加入满员服务器权限
   
   - 领地上限 20
-
-:::
 
 ## 超新星
 

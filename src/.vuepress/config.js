@@ -32,6 +32,10 @@ export default defineUserConfig({
         link: '/newbie-tutorial'
       },
       {
+        text: '玩家守则',
+        link: '/agreement'
+      },
+      {
         text: '赞助表',
         link: '/sponsor'
       },
