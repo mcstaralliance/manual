@@ -97,6 +97,12 @@ title: 赞助表
 
 仅需成为 VIP+ 及其以上的会员，即可获得 YSM 模型无限量授权权益，将你想使用的模型文件发给服主即可。
 
+::: tip YSM 是什么？
+
+YSM 是 [Yes Steve Model](https://www.mcmod.cn/class/8616.html) 模组的英文缩写，在游戏里按下 Alt + Y 可以切换各种好看的模型。
+
+:::
+
 ## 礼包
 
 ### 永久基础机械动力包
