@@ -315,6 +315,8 @@ YSM 是 [Yes Steve Model](https://www.mcmod.cn/class/8616.html) 模组的英文�
   
   - `/top` 传送至顶部权限
   
+  - `/ride` 骑乘任意实体权限
+  
   - 加入满员服务器权限
 
 ## VIP Plus
