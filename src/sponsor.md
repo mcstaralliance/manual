@@ -361,8 +361,6 @@ YSM 是 [Yes Steve Model](https://www.mcmod.cn/class/8616.html) 模组的英文�
   
   - 免费授权指定 YSM 模型（需要你提供模型）
   
-  
-  - 领地上限 10
 
 ## SVIP
 
@@ -426,17 +424,27 @@ YSM 是 [Yes Steve Model](https://www.mcmod.cn/class/8616.html) 模组的英文�
 - 16 个设置家个数
 - 特殊权限
   - `/co i` 查询权限
+
   - `/fly` 飞行权限
+
   - `/tpa` `/tpahere` `/home` 无冷却，无等待权限
+
   - `/tppos` 传送坐标权限
+
   - `/ender` 随身末影箱权限
+
   - `/workbench` 随身工作台权限
+
   - `/top` 传送至顶部权限
+
   - `/nohunger switch` 自由切换永不饥饿权限
+
   - `/ride` 骑乘任意实体权限
+
   - 免费授权指定 YSM 模型（需要你提供模型）
+
   - 加入满员服务器权限
-  - 领地上限 15
+
 
 
 
@@ -460,18 +468,28 @@ YSM 是 [Yes Steve Model](https://www.mcmod.cn/class/8616.html) 模组的英文�
 - 16 个设置家个数
 - 特殊权限
   - `/co i` 查询权限
+
   - `/fly` 飞行权限
+
   - `/tpa` `/tpahere` `/home` 无冷却，无等待权限
+
   - `/tppos` 传送坐标权限
+
   - `/ender` 随身末影箱权限
+
   - `/workbench` 随身工作台权限
+
   - `/top` 传送至顶部权限
+
   - `/nohunger switch` 自由切换永不饥饿权限
+
   - `/ride` 骑乘任意实体权限
+
   - 免费授权指定 YSM 模型（需要你提供模型）
+
   - 随身末影箱权限，随身工作台权限，随身铁砧权限
+
   - 加入满员服务器权限
-  - 领地上限 20
 
 ## MVP Plus
 
