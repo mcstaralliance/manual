@@ -305,20 +305,14 @@ YSM 是 [Yes Steve Model](https://www.mcmod.cn/class/8616.html) 模组的英文�
 - 特殊权限
 
   - `/co i` 查询权限
-  
   - `/fly` 飞行权限
-  
   - `/tpa` `/tpahere` `/home` 无冷却，无等待权限
-  
   - `/tppos` 传送坐标权限
-  
   - `/ender` 随身末影箱权限
-  
   - `/workbench` 随身工作台权限
-  
   - `/top` 传送至顶部权限
-  
   - `/ride` 骑乘任意实体权限
+  - 无视酸水酸雨
   
   - 加入满员服务器权限
 
@@ -361,7 +355,7 @@ YSM 是 [Yes Steve Model](https://www.mcmod.cn/class/8616.html) 模组的英文�
   - `/top` 传送至顶部权限
   
   - `/ride` 骑乘任意实体权限
-  
+  - 无视酸水酸雨
   - 免费授权指定 YSM 模型（需要你提供模型）
   
 
@@ -403,6 +397,7 @@ YSM 是 [Yes Steve Model](https://www.mcmod.cn/class/8616.html) 模组的英文�
   - `/top` 传送至顶部权限
     
   - `/ride` 骑乘任意实体权限
+  - 无视酸水酸雨
     
   - 免费联系服主授权指定 YSM 模型（需要你提供模型）
 
@@ -446,7 +441,7 @@ YSM 是 [Yes Steve Model](https://www.mcmod.cn/class/8616.html) 模组的英文�
   - `/nohunger switch` 自由切换永不饥饿权限
 
   - `/ride` 骑乘任意实体权限
-
+  - 无视酸水酸雨
   - 免费授权指定 YSM 模型（需要你提供模型）
 
   - 加入满员服务器权限
@@ -496,7 +491,7 @@ YSM 是 [Yes Steve Model](https://www.mcmod.cn/class/8616.html) 模组的英文�
   - 免费授权指定 YSM 模型（需要你提供模型）
 
   - 随身末影箱权限，随身工作台权限，随身铁砧权限
-
+  - 无视酸水酸雨
   - 加入满员服务器权限
 
 ## MVP Plus
@@ -545,7 +540,7 @@ YSM 是 [Yes Steve Model](https://www.mcmod.cn/class/8616.html) 模组的英文�
   - 随身末影箱权限，随身工作台权限，随身铁砧权限
   
   - 加入满员服务器权限
-  
+  - 无视酸水酸雨
   - 领地上限 20
 
 ## 超新星
