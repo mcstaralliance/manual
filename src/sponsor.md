@@ -4,7 +4,7 @@ title: 赞助表
 
 # 星域世界赞助表
 
-**如果没有特殊说明，本列表内的单品、礼包和附魔时效均为永久，即每周目都可领取。**
+**如果没有特殊说明，本列表内的单品、礼包和附魔时效均为永久，即每周目都可领取。** 永久物品如遇到模组被删除等问题，可免费更换其他等价物品。
 
 赞助请通过 QQ(934664404) 联系服主。群主就是服主。
 
@@ -15,15 +15,16 @@ title: 赞助表
 |         名称          | 价格(元) |  时效  |                             备注                             |
 | :-------------------: | :------: | :----: | :----------------------------------------------------------: |
 |     天堂陨落长弓      |    69    |  永久  |                                                              |
+|     加速火把      |    50/75    |  永久  |                50 元一周目，75 元永久                                         |
+|     压缩加速火把      |    300/325    |  永久  |                300 元一周目，325 元永久，拥有 6 个永久普通加速火把可免费升级                                         |
 |    创造模式法术书     |   299    |  永久  |                                                              |
 |      创造魔源罐       |   299    |  永久  |                                                              |
 |     创造能量立方      |   1000   |  永久  |                                                              |
-|      永恒魔力池       |   399    |  永久  |                                                              |
-|     神龙力量权杖      |   299    |  永久  |           简称龙权，发放时可以根据需求帮忙配置模块           |
+|      永恒魔力池       |   199    |  永久  |                                                              |
 |      自定义称号       |    5     | 一次性 |                                                              |
 |     创造魔力石板      |   199    |  永久  |                                                              |
 |   泰拉粉碎者 SS 级    |    99    |  永久  |                   建议配合创造魔力石板使用                   |
-|      区块加载器       |   199    |  永久  |   可持续加载 1 个区块，如果需要加载多个区块可私聊服主详谈    |
+|      区块加载       |   199    |  永久  |   可持续加载 1 个区块，如果需要加载多个区块可私聊服主详谈    |
 |     凋灵骷髅头颅      |    1     | 一次性 |                                                              |
 |        10 星愿        |    1     |        |      没有用完的星愿会存在游戏账户里，周目更替也不会消失      |
 |     世界崩解之镐      |   399    |  永久  |                                                              |
@@ -87,8 +88,8 @@ title: 赞助表
 
 ## 永久定制附魔
 
-- 任意一个属性一级 6 元。
-- 抢夺、时运 10 元一级。
+- 任意一个属性一级 3 元。
+- 抢夺、时运 6 元一级。
 
 
 **如果你有其它定制需求，可私聊服主详谈。**
@@ -107,7 +108,7 @@ YSM 是 [Yes Steve Model](https://www.mcmod.cn/class/8616.html) 模组的英文�
 
 ### 永久基础机械动力包
 
-**价格: 25 元**
+**价格: 15 元**
 
 内含:
 
@@ -125,7 +126,7 @@ YSM 是 [Yes Steve Model](https://www.mcmod.cn/class/8616.html) 模组的英文�
 
 ### 永久高级机械动力包
 
-**价格: 50 元**
+**价格: 39 元**
 
 内含:
 
@@ -190,7 +191,7 @@ YSM 是 [Yes Steve Model](https://www.mcmod.cn/class/8616.html) 模组的英文�
 
 ### 永久高级植物包
 
-**价格：70 元**
+**价格：49 元**
 
 内含：
 
@@ -248,8 +249,7 @@ YSM 是 [Yes Steve Model](https://www.mcmod.cn/class/8616.html) 模组的英文�
 ### 150 元周目累计赞助礼包
 
 内含:
-
-- 命运骰子 * 6
+- 自选幻想之刃拔刀一把（一周目）
 - 创造魔源罐 （一周目）
 
 ### 350 元周目累计赞助礼包
@@ -258,7 +258,10 @@ YSM 是 [Yes Steve Model](https://www.mcmod.cn/class/8616.html) 模组的英文�
 
 - 永恒魔力池（一周目）
 - 炼造催化器
-- 刷怪笼 （一周目）
+- 挑战券 * 5
+- 永恒常春藤 * 16
+- 创造弹药盒
+- 超级派蒙旋风矿机 Lite（一周目）
 
 ## 赞助方式
 
@@ -291,7 +294,7 @@ YSM 是 [Yes Steve Model](https://www.mcmod.cn/class/8616.html) 模组的英文�
 
 内含:
 
-![VIP.png](https://s2.loli.net/2025/01/23/p8kjfydvHcaFbRI.png)
+![VIP.png](https://s2.loli.net/2025/07/06/4WSXo9EiLhkRBcM.png)
 
 - 2000 硬币
 
@@ -334,7 +337,7 @@ YSM 是 [Yes Steve Model](https://www.mcmod.cn/class/8616.html) 模组的英文�
 
 内含:
 
-![VIPplus.png](https://s2.loli.net/2025/01/23/PGD5T4VQjz1YMNp.png)
+![VIP_.png](https://s2.loli.net/2025/07/06/bHYO2m3qBztJcN9.png)
 
 - 3000 硬币
 
@@ -375,7 +378,8 @@ YSM 是 [Yes Steve Model](https://www.mcmod.cn/class/8616.html) 模组的英文�
 
 内含:
 
-![SVIP.png](https://s2.loli.net/2025/01/23/zK36kNP8bZ5InME.png)
+![SVIP1.png](https://s2.loli.net/2025/07/06/48Y1TweLJdhFCDP.png)
+![SVIP2.png](https://s2.loli.net/2025/07/06/MRPbW47rFCXielB.png)
 
 - 6500 硬币
 
@@ -417,7 +421,9 @@ YSM 是 [Yes Steve Model](https://www.mcmod.cn/class/8616.html) 模组的英文�
 
 内含:
 
-![SVIPplus.png](https://s2.loli.net/2025/01/23/dYPstUOSmTfQy7A.png)
+![SVIP_1.png](https://s2.loli.net/2025/07/06/qRVcxT7If8nUDMZ.png)
+![SVIP_2.png](https://s2.loli.net/2025/07/06/L3PMsRO9Tk7cdK6.png)
+![aftersvip_.png](https://s2.loli.net/2025/07/06/KrsLxc5u34bImWY.png)
 
 - 8000 硬币
 - 附魔等级 100 级
@@ -461,7 +467,9 @@ YSM 是 [Yes Steve Model](https://www.mcmod.cn/class/8616.html) 模组的英文�
 
 内含:
 
-![MVP.png](https://s2.loli.net/2025/01/23/l3pCkScgw1iZu8R.png)
+![MVP1.png](https://s2.loli.net/2025/07/06/WScKj6vae7U2wAM.png)
+![MVP2.png](https://s2.loli.net/2025/07/06/x2cAlDoueSTf4zN.png)
+![aftersvip_.png](https://s2.loli.net/2025/07/06/KrsLxc5u34bImWY.png)
 
 - 12000 硬币
 - 附魔等级 140 级
@@ -501,7 +509,9 @@ YSM 是 [Yes Steve Model](https://www.mcmod.cn/class/8616.html) 模组的英文�
 
 内含:
 
-![MVPplus.png](https://s2.loli.net/2025/01/23/s6NTSJgBnDLxQr3.png)
+![MVP_1.png](https://s2.loli.net/2025/07/06/L7m3wZtnYa9OvKb.png)
+![MVP_2.png](https://s2.loli.net/2025/07/06/OHtBPiwLZhfnbFd.png)
+![aftersvip_.png](https://s2.loli.net/2025/07/06/KrsLxc5u34bImWY.png)
 
 - 16000 硬币
 
@@ -555,19 +565,12 @@ YSM 是 [Yes Steve Model](https://www.mcmod.cn/class/8616.html) 模组的英文�
 - 每周目两次创造 / 珍贵物品抽奖池抽奖机会
 
   内含永恒魔力池、创造魔力石板、创造 RF 电源、无尽装备等。没有垃圾。
-
 - 每周目指定一名玩家，赠送 VIP 到 MVP 任意一级会员。或免除一次续费。
-
-- 私人独立世界 或 私人独立子服
-
+- 压缩加速火把 \* 2
+- 幻想之刃拔刀剑任选一把
 - 区块加载器
-
-- 进服提示
-
 - 专属管理员 WE 地形编辑服务
-
 - 优先了解服务器最新消息
-
 - 免费授权指定 YSM 模型（需要你提供模型）
 
 ## 赞助方式
