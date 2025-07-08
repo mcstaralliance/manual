@@ -161,7 +161,7 @@ YSM 是 [Yes Steve Model](https://www.mcmod.cn/class/8616.html) 模组的英文�
 - 16k 合成存储器 \* 2
 - 分子装配室 \* 8
 - ME 接口 \* 8
-- ME 流体接口 \* 8
+- ME 样板供应器 \* 8
 - 空白样板 \* 16
 - 合成终端
 - 样板终端
@@ -179,6 +179,7 @@ YSM 是 [Yes Steve Model](https://www.mcmod.cn/class/8616.html) 模组的英文�
 - 64k 合成存储器 \* 2
 - 分子装配室 \* 24
 - ME 接口 \* 24
+- ME 样板供应器 \* 24
 - 空白样板 \* 32
 - 合成终端
 - 样板终端
