@@ -361,6 +361,7 @@ YSM 是 [Yes Steve Model](https://www.mcmod.cn/class/8616.html) 模组的英文�
   - `/ride` 骑乘任意实体权限
   - 无视酸水酸雨
   - 免费授权指定 YSM 模型（需要你提供模型）
+  - 加入满员服务器权限
   
 
 ## SVIP
@@ -403,7 +404,8 @@ YSM 是 [Yes Steve Model](https://www.mcmod.cn/class/8616.html) 模组的英文�
   - `/ride` 骑乘任意实体权限
   - 无视酸水酸雨
     
-  - 免费联系服主授权指定 YSM 模型（需要你提供模型）
+  - 免费联系服主授权指定 YSM 模型（需要你提供模型）\
+  - 加入满员服务器权限
 
 ## SVIP Plus
 
