@@ -19,6 +19,7 @@ title: 鸣谢名单
 - qing_kong
 - Tudor
 - Ecaree
+- MyJiaoJiaoYa
 
 ## 赞助玩家
 
