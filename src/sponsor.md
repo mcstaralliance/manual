@@ -193,6 +193,20 @@ YSM 是 [Yes Steve Model](https://www.mcmod.cn/class/8616.html) 模组的英文�
 - 并行处理单元 \* 4
 - 拓展压印器
 
+### 永久 MEK 基础包
+
+**价格：45 元**
+
+内含:  
+![mekbasic.png](https://s2.loli.net/2025/07/15/2LCiufEAvsHklZ9.png)
+
+### 永久 MEK 高级包
+
+**价格：75 元**
+
+内含:  
+![mekadvanced.png](https://s2.loli.net/2025/07/15/EhJb2YIBu6dUQ19.png)
+
 ### 永久高级植物包
 
 **价格：49 元**
@@ -266,6 +280,14 @@ YSM 是 [Yes Steve Model](https://www.mcmod.cn/class/8616.html) 模组的英文�
 - 永恒常春藤 * 16
 - 创造弹药盒
 - 超级派蒙旋风矿机 Lite（一周目）
+
+### 550 元周目累计赞助礼包
+
+内含:
+
+- 超级派蒙旋风矿机 Pro（一周目）
+- 加速火把
+- 压缩加速火把
 
 ## 赞助方式
 
