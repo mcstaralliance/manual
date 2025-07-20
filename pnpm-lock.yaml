@@ -14,6 +14,9 @@ importers:
       '@vuepress/client':
         specifier: ^2.0.0-rc.2
         version: 2.0.0-rc.2
+      '@vuepress/plugin-google-analytics':
+        specifier: 2.0.0-rc.112
+        version: 2.0.0-rc.112(vuepress@2.0.0-rc.24(@vuepress/bundler-vite@2.0.0-rc.7(@types/node@24.0.10)(sass@1.89.2))(vue@3.5.17))
       '@vuepress/theme-default':
         specifier: ^2.0.0-rc.2
         version: 2.0.0-rc.110(markdown-it@14.1.0)(sass@1.89.2)(vuepress@2.0.0-rc.24(@vuepress/bundler-vite@2.0.0-rc.7(@types/node@24.0.10)(sass@1.89.2))(vue@3.5.17))
@@ -771,6 +774,11 @@ packages:
     resolution: {integrity: sha512-1sEwzuIJd5T2jVWyvRFZuOSr4aea45Iv1fglOI/UXwsbzn6PQMEexCnwKC0KrYrxb9JeYCVZnv58nWWfatFYbg==}
     peerDependencies:
       vuepress: 2.0.0-rc.23
+
+  '@vuepress/plugin-google-analytics@2.0.0-rc.112':
+    resolution: {integrity: sha512-G+lCRPgfxvqSROWTAZFVYZzAMMBfOsvqOhn0PcYXc3mr2Eo+vcuczXdbIHNLQkUpWcKSs+jRDc7fH+xnkJ6MBg==}
+    peerDependencies:
+      vuepress: 2.0.0-rc.24
 
   '@vuepress/plugin-links-check@2.0.0-rc.110':
     resolution: {integrity: sha512-v6z5kBalQTo+6axcVAxtR6lAoCuSKHvkNJQldVF0zjbnseUe6rpj56cLpYXRwCmHr3CT//PYz0FIFqINABtJ5A==}
@@ -2337,6 +2345,10 @@ snapshots:
       vuepress: 2.0.0-rc.24(@vuepress/bundler-vite@2.0.0-rc.7(@types/node@24.0.10)(sass@1.89.2))(vue@3.5.17)
     transitivePeerDependencies:
       - typescript
+
+  '@vuepress/plugin-google-analytics@2.0.0-rc.112(vuepress@2.0.0-rc.24(@vuepress/bundler-vite@2.0.0-rc.7(@types/node@24.0.10)(sass@1.89.2))(vue@3.5.17))':
+    dependencies:
+      vuepress: 2.0.0-rc.24(@vuepress/bundler-vite@2.0.0-rc.7(@types/node@24.0.10)(sass@1.89.2))(vue@3.5.17)
 
   '@vuepress/plugin-links-check@2.0.0-rc.110(vuepress@2.0.0-rc.24(@vuepress/bundler-vite@2.0.0-rc.7(@types/node@24.0.10)(sass@1.89.2))(vue@3.5.17))':
     dependencies:

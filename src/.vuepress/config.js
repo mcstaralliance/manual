@@ -1,12 +1,13 @@
 import { defaultTheme } from '@vuepress/theme-default'
 import { defineUserConfig } from 'vuepress/cli'
 import { viteBundler } from '@vuepress/bundler-vite'
+import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics'
 
 export default defineUserConfig({
   lang: 'zh-CN',
   title: '星域世界文档库',
   head: [
-    ['link', { rel: 'canonical', href: 'https://help.mcstaralliance.com/' }],
+    ['link', { rel: 'canonical', href: 'https://docs.mcstaralliance.com/' }],
     ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }],
     ['meta', { name: 'description', content: '星域世界的官方文档库' }],
     ['meta', { name: 'keywords', content: '我的世界, Minecraft, 星域世界, 文档, 游戏' }],
@@ -15,11 +16,11 @@ export default defineUserConfig({
     navbar: [
       {
         text: 'Celestia Skin',
-        link: 'https://celestia.skin/',
+        link: 'https://skin.mcstaralliance.com/',
       },
       {
         text: '鸣谢名单',
-        link: 'https://help.mcstaralliance.com/acknowledgments',
+        link: 'https://docs.mcstaralliance.com/acknowledgments',
       }
     ],
     sidebar: [
@@ -61,5 +62,10 @@ export default defineUserConfig({
         rel: 'noopener noreferrer'
       }
     }
-  }
+  },
+  plugins: [
+    googleAnalyticsPlugin({
+      id: 'G-TDHG0W7MH7',
+    }),
+  ],
 })
