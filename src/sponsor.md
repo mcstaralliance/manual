@@ -314,7 +314,7 @@ YSM 是 [Yes Steve Model](https://www.mcmod.cn/class/8616.html) 模组的英文�
 
 ::: tip 温馨提示
 
-或者，你每周目可以通过 30 元累计赞助礼包免费续费一周目。详见 [这里](https://help.mcstaralliance.com/sponsor/#%E5%91%A8%E7%9B%AE%E7%B4%AF%E8%AE%A1%E8%B5%9E%E5%8A%A9%E7%A4%BC%E5%8C%85)。
+或者，你每周目可以通过 30 元累计赞助礼包免费续费一周目。详见 [这里](https://docs.mcstaralliance.com/sponsor/#%E5%91%A8%E7%9B%AE%E7%B4%AF%E8%AE%A1%E8%B5%9E%E5%8A%A9%E7%A4%BC%E5%8C%85)。
 
 :::
 
@@ -351,7 +351,7 @@ YSM 是 [Yes Steve Model](https://www.mcmod.cn/class/8616.html) 模组的英文�
 
 ::: tip 温馨提示
 
-或者，你每周目可以通过 30 元累计赞助礼包免费续费一周目。详见 [这里](https://help.mcstaralliance.com/sponsor/#%E5%91%A8%E7%9B%AE%E7%B4%AF%E8%AE%A1%E8%B5%9E%E5%8A%A9%E7%A4%BC%E5%8C%85)。
+或者，你每周目可以通过 30 元累计赞助礼包免费续费一周目。详见 [这里](https://docs.mcstaralliance.com/sponsor/#%E5%91%A8%E7%9B%AE%E7%B4%AF%E8%AE%A1%E8%B5%9E%E5%8A%A9%E7%A4%BC%E5%8C%85)。
 
 :::
 
@@ -393,7 +393,7 @@ YSM 是 [Yes Steve Model](https://www.mcmod.cn/class/8616.html) 模组的英文�
 
 ::: tip 温馨提示
 
-或者，你每周目可以通过 60 元累计赞助礼包免费续费一周目。详见 [这里](https://help.mcstaralliance.com/sponsor/#%E5%91%A8%E7%9B%AE%E7%B4%AF%E8%AE%A1%E8%B5%9E%E5%8A%A9%E7%A4%BC%E5%8C%85)。
+或者，你每周目可以通过 60 元累计赞助礼包免费续费一周目。详见 [这里](https://docs.mcstaralliance.com/sponsor/#%E5%91%A8%E7%9B%AE%E7%B4%AF%E8%AE%A1%E8%B5%9E%E5%8A%A9%E7%A4%BC%E5%8C%85)。
 
 :::
 
@@ -438,7 +438,7 @@ YSM 是 [Yes Steve Model](https://www.mcmod.cn/class/8616.html) 模组的英文�
 
 ::: tip 温馨提示
 
-或者，你每周目可以通过 60 元累计赞助礼包免费续费一周目。详见 [这里](https://help.mcstaralliance.com/sponsor/#%E5%91%A8%E7%9B%AE%E7%B4%AF%E8%AE%A1%E8%B5%9E%E5%8A%A9%E7%A4%BC%E5%8C%85)。
+或者，你每周目可以通过 60 元累计赞助礼包免费续费一周目。详见 [这里](https://docs.mcstaralliance.com/sponsor/#%E5%91%A8%E7%9B%AE%E7%B4%AF%E8%AE%A1%E8%B5%9E%E5%8A%A9%E7%A4%BC%E5%8C%85)。
 
 :::
 
@@ -484,7 +484,7 @@ YSM 是 [Yes Steve Model](https://www.mcmod.cn/class/8616.html) 模组的英文�
 
 ::: tip 温馨提示
 
-或者，你每周目可以通过 60 元累计赞助礼包免费续费一周目。详见 [这里](https://help.mcstaralliance.com/sponsor/#%E5%91%A8%E7%9B%AE%E7%B4%AF%E8%AE%A1%E8%B5%9E%E5%8A%A9%E7%A4%BC%E5%8C%85)。
+或者，你每周目可以通过 60 元累计赞助礼包免费续费一周目。详见 [这里](https://docs.mcstaralliance.com/sponsor/#%E5%91%A8%E7%9B%AE%E7%B4%AF%E8%AE%A1%E8%B5%9E%E5%8A%A9%E7%A4%BC%E5%8C%85)。
 
 :::
 
