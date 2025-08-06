@@ -18,7 +18,7 @@
 
 3. 在 [这里](https://skin.mcstaralliance.com/user/link) 按照操作提示绑定 Fanbook 账号，如果你没有 Fanbook 账号，可以在页面里直接注册。
 
-4. 在启动器里 **正确** 使用外置登录，[点击这里](https://docs.qq.com/doc/DYUVyb2lPRmhVV3ZN) 可以查看更具体的教程。
+4. 在启动器里添加账户，选择 **Celestia Skin** 外置登录，[点击这里](https://docs.qq.com/doc/DYUVyb2lPRmhVV3ZN) 可以查看更具体的教程。
 
 ::: danger 警告
 
