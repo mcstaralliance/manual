@@ -25,7 +25,7 @@ export default defineUserConfig({
     ],
     sidebar: [
       {
-        text: '服务器宣言',
+        text: '星域世界宣言',
         link: '/'
       },
       {
