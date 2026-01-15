@@ -25,7 +25,7 @@ export default defineUserConfig({
     ],
     sidebar: [
       {
-        text: '欢迎页',
+        text: '服务器宣言',
         link: '/'
       },
       {
