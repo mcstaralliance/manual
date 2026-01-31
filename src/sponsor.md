@@ -237,9 +237,9 @@ YSM 是 [Yes Steve Model](https://www.mcmod.cn/class/8616.html) 模组的英文�
 
 内含:
 
-![image-20260131203831348](https://s2.loli.net/2026/01/31/RckbEnGmY3l8ZQy.png)
+![image-20260131203831348](https://resource.mcstaralliance.com/images/starcraft/vip-1.png)
 
-![image-20260131203847371](https://s2.loli.net/2026/01/31/oYEfVO5d8L7DhBc.png)
+![image-20260131203847371](https://resource.mcstaralliance.com/images/starcraft/vip-2.png)
 
 - 2000 硬币
 
@@ -276,9 +276,9 @@ YSM 是 [Yes Steve Model](https://www.mcmod.cn/class/8616.html) 模组的英文�
 
 内含:
 
-![image-20260131203656100](https://s2.loli.net/2026/01/31/8H7RNephPVqSusO.png)
+![image-20260131203656100](https://resource.mcstaralliance.com/images/starcraft/vip%2B-1.png)
 
-![](https://s2.loli.net/2026/01/31/8H7RNephPVqSusO.png)
+![](https://resource.mcstaralliance.com/images/starcraft/vip%2B-2.png)
 
 - 3000 硬币
 
@@ -320,9 +320,9 @@ YSM 是 [Yes Steve Model](https://www.mcmod.cn/class/8616.html) 模组的英文�
 
 内含:
 
-![image-20260131203509319](https://s2.loli.net/2026/01/31/DrWOeNyT5KI2psf.png)
+![image-20260131203509319](https://resource.mcstaralliance.com/images/starcraft/svip-1.png)
 
-![image-20260131203527963](https://s2.loli.net/2026/01/31/1wqNi7a8DKpT6tx.png)
+![image-20260131203527963](https://resource.mcstaralliance.com/images/starcraft/svip-2.png)
 
 - 6500 硬币
 
@@ -366,11 +366,11 @@ YSM 是 [Yes Steve Model](https://www.mcmod.cn/class/8616.html) 模组的英文�
 
 内含:
 
-![image-20260131203250238](https://s2.loli.net/2026/01/31/rVSqHPFx6sleJ5B.png)
+![image-20260131203250238](https://resource.mcstaralliance.com/images/starcraft/svip%2B-1.png)
 
-![image-20260131203309212](https://s2.loli.net/2026/01/31/bdqDSU4NhnMfvOY.png)
+![image-20260131203309212](https://resource.mcstaralliance.com/images/starcraft/svip%2B-2.png)
 
-![aftersvip_.png](https://s2.loli.net/2025/07/06/KrsLxc5u34bImWY.png)
+![aftersvip_.png](https://resource.mcstaralliance.com/images/starcraft/after-svip%2B.png)
 
 - 8000 硬币
 - 附魔等级 100 级
@@ -414,11 +414,13 @@ YSM 是 [Yes Steve Model](https://www.mcmod.cn/class/8616.html) 模组的英文�
 
 内含:
 
-![](https://s2.loli.net/2026/01/31/7aSRoczBEF34Z8C.png)
+![](https://resource.mcstaralliance.com/images/starcraft/mvp-1.png)
 
-![image-20260131203159849](https://s2.loli.net/2026/01/31/w2LjGTOXrDZyx7V.png)
+![image-20260131203159849](https://resource.mcstaralliance.com/images/starcraft/mvp-2.png)
 
-![aftersvip_.png](https://s2.loli.net/2025/07/06/KrsLxc5u34bImWY.png)
+![](https://resource.mcstaralliance.com/images/starcraft/mvp-3.png)
+
+![aftersvip_.png](https://resource.mcstaralliance.com/images/starcraft/after-svip%2B.png)
 
 - 12000 硬币
 - 附魔等级 140 级
@@ -458,13 +460,13 @@ YSM 是 [Yes Steve Model](https://www.mcmod.cn/class/8616.html) 模组的英文�
 
 内含:
 
-![image-20260131202935174](https://s2.loli.net/2026/01/31/ZMo7c5ty2ugr8FT.png)
+![image-20260131202935174](https://resource.mcstaralliance.com/images/starcraft/mvp%2B-1.png)
 
-![image-20260131203033180](https://s2.loli.net/2026/01/31/sv296a73Fm5EXIo.png)
+![image-20260131203033180](https://resource.mcstaralliance.com/images/starcraft/mvp%2B-2.png)
 
-![image-20260131203054182](https://s2.loli.net/2026/01/31/uIySiHpEwD3qF7n.png)
+![image-20260131203054182](https://resource.mcstaralliance.com/images/starcraft/mvp%2B-3.png)
 
-![image-20260131123111975](https://s2.loli.net/2026/01/31/PCu1HaqB8pr5ebv.png)
+![image-20260131123111975](https://resource.mcstaralliance.com/images/starcraft/mvp%2B-4.png)
 
 
 
