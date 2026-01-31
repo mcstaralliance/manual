@@ -220,6 +220,12 @@ YSM 是 [Yes Steve Model](https://www.mcmod.cn/class/8616.html) 模组的英文�
 
 :::
 
+
+
+**第二十周目所有会员礼包均额外赠送三角洲北极星一把。**
+
+
+
 [[toc]]
 
 ## VIP
@@ -235,7 +241,9 @@ YSM 是 [Yes Steve Model](https://www.mcmod.cn/class/8616.html) 模组的英文�
 
 内含:
 
-![VIP.png](https://s2.loli.net/2025/07/06/4WSXo9EiLhkRBcM.png)
+![image-20260131203831348](https://s2.loli.net/2026/01/31/RckbEnGmY3l8ZQy.png)
+
+![image-20260131203847371](https://s2.loli.net/2026/01/31/oYEfVO5d8L7DhBc.png)
 
 - 2000 硬币
 
@@ -272,7 +280,9 @@ YSM 是 [Yes Steve Model](https://www.mcmod.cn/class/8616.html) 模组的英文�
 
 内含:
 
-![VIP_.png](https://s2.loli.net/2025/07/06/bHYO2m3qBztJcN9.png)
+![image-20260131203656100](https://s2.loli.net/2026/01/31/8H7RNephPVqSusO.png)
+
+![](https://s2.loli.net/2026/01/31/8H7RNephPVqSusO.png)
 
 - 3000 硬币
 
@@ -314,8 +324,9 @@ YSM 是 [Yes Steve Model](https://www.mcmod.cn/class/8616.html) 模组的英文�
 
 内含:
 
-![SVIP1.png](https://s2.loli.net/2025/07/06/48Y1TweLJdhFCDP.png)
-![SVIP2.png](https://s2.loli.net/2025/07/06/MRPbW47rFCXielB.png)
+![image-20260131203509319](https://s2.loli.net/2026/01/31/DrWOeNyT5KI2psf.png)
+
+![image-20260131203527963](https://s2.loli.net/2026/01/31/1wqNi7a8DKpT6tx.png)
 
 - 6500 硬币
 
@@ -359,8 +370,10 @@ YSM 是 [Yes Steve Model](https://www.mcmod.cn/class/8616.html) 模组的英文�
 
 内含:
 
-![SVIP_1.png](https://s2.loli.net/2025/07/06/qRVcxT7If8nUDMZ.png)
-![SVIP_2.png](https://s2.loli.net/2025/07/06/L3PMsRO9Tk7cdK6.png)
+![image-20260131203250238](https://s2.loli.net/2026/01/31/rVSqHPFx6sleJ5B.png)
+
+![image-20260131203309212](https://s2.loli.net/2026/01/31/bdqDSU4NhnMfvOY.png)
+
 ![aftersvip_.png](https://s2.loli.net/2025/07/06/KrsLxc5u34bImWY.png)
 
 - 8000 硬币
@@ -405,8 +418,10 @@ YSM 是 [Yes Steve Model](https://www.mcmod.cn/class/8616.html) 模组的英文�
 
 内含:
 
-![MVP1.png](https://s2.loli.net/2025/07/06/WScKj6vae7U2wAM.png)
-![MVP2.png](https://s2.loli.net/2025/07/06/x2cAlDoueSTf4zN.png)
+![](https://s2.loli.net/2026/01/31/7aSRoczBEF34Z8C.png)
+
+![image-20260131203159849](https://s2.loli.net/2026/01/31/w2LjGTOXrDZyx7V.png)
+
 ![aftersvip_.png](https://s2.loli.net/2025/07/06/KrsLxc5u34bImWY.png)
 
 - 12000 硬币
@@ -447,43 +462,33 @@ YSM 是 [Yes Steve Model](https://www.mcmod.cn/class/8616.html) 模组的英文�
 
 内含:
 
-![MVP_1.png](https://s2.loli.net/2025/07/06/L7m3wZtnYa9OvKb.png)
-![MVP_2.png](https://s2.loli.net/2025/07/06/OHtBPiwLZhfnbFd.png)
-![aftersvip_.png](https://s2.loli.net/2025/07/06/KrsLxc5u34bImWY.png)
+![image-20260131202935174](https://s2.loli.net/2026/01/31/ZMo7c5ty2ugr8FT.png)
 
-- 16000 硬币
+![image-20260131203033180](https://s2.loli.net/2026/01/31/sv296a73Fm5EXIo.png)
 
+![image-20260131203054182](https://s2.loli.net/2026/01/31/uIySiHpEwD3qF7n.png)
+
+![image-20260131123111975](https://s2.loli.net/2026/01/31/PCu1HaqB8pr5ebv.png)
+
+
+
+- 20000 硬币
 - 附魔等级 180 级
-
 - 20 个设置家个数
-
 - 特殊权限
   - `/co i` 查询权限
-  
   - `/fly` 飞行权限
-  
   - `/tpa` `/tpahere` `/home` 无冷却，无等待权限
-  
   - `/tppos` 传送坐标权限
-  
   - `/heal` 回复血量以及饱食度
-  
   - `/ender` 随身末影箱权限
-  
   - `/workbench` 随身工作台权限
-  
   - `/top` 传送至顶部权限
-  
   - `/nohunger switch` 自由切换永不饥饿权限
-  
   - `/ride` 骑乘任意实体权限
-  
   - 免费授权指定 YSM 模型（需要你提供模型）
-  
   - 随身末影箱权限，随身工作台权限，随身铁砧权限
-  
   - 加入满员服务器权限
-  - 无视酸水酸雨
   - 领地上限 20
 
 ## 超新星
@@ -495,12 +500,15 @@ YSM 是 [Yes Steve Model](https://www.mcmod.cn/class/8616.html) 模组的英文�
 
 - **MVP+ 礼包以及特权**
 
-- 每周目两次创造 / 珍贵物品抽奖池抽奖机会
+- **所有颜色鸡，8个鸡舍，4级鸡饲料，训练鸡器，灵魂提取器（后期产矿）**
+
+- 每周目两次珍稀物品抽奖池抽奖机会
 
   内含永恒魔力池、创造魔力石板、创造 RF 电源、无尽装备等。没有垃圾。
-- 每周目指定一名玩家，赠送 VIP 到 MVP 任意一级会员。或免除一次续费。
+- 每周目指定一名玩家，赠送 VIP 到 MVP 任意一级会员（一周目）
 - 压缩加速火把 \* 2
 - 幻想之刃拔刀剑任选一把
+- 80000 硬币
 - 区块加载器
 - 专属管理员 WE 地形编辑服务
 - 优先了解服务器最新消息
