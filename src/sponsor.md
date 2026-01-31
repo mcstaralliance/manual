@@ -210,7 +210,7 @@ YSM 是 [Yes Steve Model](https://www.mcmod.cn/class/8616.html) 模组的英文�
 
 请通过 QQ(934664404) 联系服主。群主就是服主。
 
-# 会员
+## 会员
 
 ::: tip 温馨提示
 
@@ -223,10 +223,6 @@ YSM 是 [Yes Steve Model](https://www.mcmod.cn/class/8616.html) 模组的英文�
 
 
 **第二十周目所有会员礼包均额外赠送三角洲北极星一把。**
-
-
-
-[[toc]]
 
 ## VIP
 
