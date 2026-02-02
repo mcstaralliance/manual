@@ -195,7 +195,6 @@ YSM 是 [Yes Steve Model](https://www.mcmod.cn/class/8616.html) 模组的英文�
 
 - 炼造催化器
 - 挑战券 * 5
-- 永恒常春藤 * 8
 - 创造弹药盒
 - 超级派蒙旋风矿机 Lite（一周目）
 
