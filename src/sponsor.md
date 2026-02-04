@@ -241,7 +241,7 @@ YSM 是 [Yes Steve Model](https://www.mcmod.cn/class/8616.html) 模组的英文�
 ![image-20260131203847371](https://resource.mcstaralliance.com/images/starcraft/vip-2.png)
 
 - 2000 硬币
-- 附魔等级 30 级
+- 经验 30 级
 - 5 个设置家个数
 - 特殊权限
 
@@ -276,7 +276,7 @@ YSM 是 [Yes Steve Model](https://www.mcmod.cn/class/8616.html) 模组的英文�
 
 - 3000 硬币
 
-- 附魔等级 60 级
+- 经验 60 级
 
 - 10 个设置家个数
 
@@ -319,7 +319,7 @@ YSM 是 [Yes Steve Model](https://www.mcmod.cn/class/8616.html) 模组的英文�
 ![image-20260131203527963](https://resource.mcstaralliance.com/images/starcraft/svip-2.png)
 
 - 6500 硬币
-- 附魔等级 80 级
+- 经验 80 级
 - 14 个设置家个数
 - 特殊权限
   - `/co i` 查询权限
@@ -355,7 +355,7 @@ YSM 是 [Yes Steve Model](https://www.mcmod.cn/class/8616.html) 模组的英文�
 ![aftersvip_.png](https://resource.mcstaralliance.com/images/starcraft/after-svip%2B.png)
 
 - 8000 硬币
-- 附魔等级 100 级
+- 经验 100 级
 - 16 个设置家个数
 - 特殊权限
   - `/co i` 查询权限
@@ -405,7 +405,7 @@ YSM 是 [Yes Steve Model](https://www.mcmod.cn/class/8616.html) 模组的英文�
 ![aftersvip_.png](https://resource.mcstaralliance.com/images/starcraft/after-svip%2B.png)
 
 - 12000 硬币
-- 附魔等级 140 级
+- 经验 140 级
 - 16 个设置家个数
 - 特殊权限
   - `/co i` 查询权限
@@ -442,7 +442,7 @@ YSM 是 [Yes Steve Model](https://www.mcmod.cn/class/8616.html) 模组的英文�
 
 
 - 20000 硬币
-- 附魔等级 180 级
+- 经验 180 级
 - 20 个设置家个数
 - 特殊权限
   - `/co i` 查询权限
