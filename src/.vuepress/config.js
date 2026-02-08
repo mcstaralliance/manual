@@ -40,6 +40,10 @@ export default defineUserConfig({
         text: '赞助表',
         link: '/sponsor'
       },
+	  {
+        text: '新春赞助活动',
+        link: '/new-spring'
+      },
       {
         text: '功能性方块摆放规范',
         link: '/blocks-placing-standard'
