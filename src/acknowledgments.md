@@ -68,6 +68,16 @@ title: 鸣谢名单
 - toy_key
 - wth
 - MHJSAJO
+- TheSmallCat
+- Stella
+- Flower_Luo
+- huahua233
+- E_xun
+- yghbvd
+- fangzong
+- LonglyZll
+- can_feng
+- kkcTS
 
 ---
 
@@ -77,10 +87,8 @@ title: 鸣谢名单
 - DeemoWJ
 - Dean233
 - Ehome_2Aizi
-- Flower_Luo
 - jelly
 - jerry
-- huahua233
 - hlzou
 - HiImFaker
 - HG_zhize
