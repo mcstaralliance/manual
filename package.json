@@ -4,6 +4,18 @@
   "description": "A VuePress project",
   "license": "MIT",
   "type": "module",
+  "engines": {
+    "node": "24.x"
+  },
+  "packageManager": "pnpm@10.12.4",
+  "pnpm": {
+    "overrides": {
+      "js-yaml@<3.15.0": "3.15.0",
+      "mdast-util-to-hast@>=13.0.0 <13.2.1": "13.2.1",
+      "picomatch@<2.3.2": "2.3.2",
+      "rollup@>=4.0.0 <4.59.0": "4.59.0"
+    }
+  },
   "scripts": {
     "docs:build": "vuepress build src",
     "docs:clean-dev": "vuepress dev src --clean-cache",
@@ -11,12 +23,12 @@
     "docs:update-package": "pnpm dlx vp-update"
   },
   "devDependencies": {
-    "@vuepress/bundler-vite": "^2.0.0-rc.2",
-    "@vuepress/client": "^2.0.0-rc.2",
-    "@vuepress/plugin-google-analytics": "2.0.0-rc.112",
-    "@vuepress/theme-default": "^2.0.0-rc.2",
-    "sass": "^1.89.2",
-    "vue": "^3.4.27",
-    "vuepress": "^2.0.0-rc.2"
+    "@vuepress/bundler-vite": "2.0.0-rc.30",
+    "@vuepress/plugin-google-analytics": "2.0.0-rc.130",
+    "@vuepress/plugin-slimsearch": "2.0.0-rc.61",
+    "@vuepress/theme-default": "2.0.0-rc.132",
+    "sass": "1.102.0",
+    "vue": "3.5.40",
+    "vuepress": "2.0.0-rc.30"
   }
 }

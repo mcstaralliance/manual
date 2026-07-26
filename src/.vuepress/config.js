@@ -1,18 +1,14 @@
 import { defaultTheme } from "@vuepress/theme-default";
-import { defineUserConfig } from "vuepress/cli";
+import { defineUserConfig } from "vuepress";
 import { viteBundler } from "@vuepress/bundler-vite";
 import { googleAnalyticsPlugin } from "@vuepress/plugin-google-analytics";
+import { slimsearchPlugin } from "@vuepress/plugin-slimsearch";
 
 export default defineUserConfig({
   lang: "zh-CN",
   title: "星域世界文档库",
+  description: "星域世界的官方文档库",
   head: [
-    ["link", { rel: "canonical", href: "https://docs.mcstaralliance.com/" }],
-    [
-      "meta",
-      { name: "viewport", content: "width=device-width, initial-scale=1.0" },
-    ],
-    ["meta", { name: "description", content: "星域世界的官方文档库" }],
     [
       "meta",
       {
@@ -22,6 +18,7 @@ export default defineUserConfig({
     ],
   ],
   theme: defaultTheme({
+    hostname: "https://docs.mcstaralliance.com",
     navbar: [
       {
         text: "Celestia Skin",
@@ -29,7 +26,7 @@ export default defineUserConfig({
       },
       {
         text: "鸣谢名单",
-        link: "https://docs.mcstaralliance.com/acknowledgments",
+        link: "/acknowledgments",
       },
     ],
     sidebar: [
@@ -62,6 +59,11 @@ export default defineUserConfig({
     docsBranch: "main",
     lastUpdatedText: "最后更新 ",
     editLinkText: "帮助我们完善这个页面",
+    themePlugins: {
+      seo: {
+        canonical: "https://docs.mcstaralliance.com",
+      },
+    },
   }),
   bundler: viteBundler(),
   markdown: {
@@ -73,6 +75,9 @@ export default defineUserConfig({
     },
   },
   plugins: [
+    slimsearchPlugin({
+      indexContent: true,
+    }),
     googleAnalyticsPlugin({
       id: "G-TDHG0W7MH7",
     }),
