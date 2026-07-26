@@ -500,19 +500,18 @@ async function copyQQ() {
         续费会员的赞助金额不计入周目累计赞助；单周目内累计赞助 550 元，可领取全部五档累计礼包。
       </div>
       <div class="milestone-grid">
-        <details
+        <article
           v-for="pack in cumulativePackages"
           :key="pack.amount"
           class="milestone-card"
         >
-          <summary>
+          <div class="milestone-card-header">
             <span><strong>累计 ¥{{ pack.amount }}</strong><small>达标可领取</small></span>
-            <span>查看 {{ pack.items.length }} 项内容</span>
-          </summary>
+          </div>
           <ul>
             <li v-for="item in pack.items" :key="item">{{ item }}</li>
           </ul>
-        </details>
+        </article>
       </div>
     </section>
 
@@ -1001,27 +1000,25 @@ async function copyQQ() {
   break-inside: avoid;
 }
 
-.milestone-card > summary {
+.milestone-card-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
   padding: 1rem;
-  cursor: pointer;
 }
 
-.milestone-card > summary span:first-child {
+.milestone-card-header span {
   display: flex;
   flex-direction: column;
   gap: 0.2rem;
 }
 
-.milestone-card > summary strong {
+.milestone-card-header strong {
   font-size: 1.1rem;
 }
 
-.milestone-card > summary small,
-.milestone-card > summary span:last-child {
+.milestone-card-header small {
   color: var(--sponsor-muted);
   font-size: 0.78rem;
 }
