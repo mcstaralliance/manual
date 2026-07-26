@@ -4,10 +4,10 @@ import { onBeforeUnmount, onMounted, ref } from "vue";
 const copied = ref(false);
 const activeSection = ref("");
 const sectionLinks = [
-  { id: "single-products", label: "单品" },
   { id: "permanent-packages", label: "永久礼包" },
   { id: "cumulative-packages", label: "累计礼包" },
   { id: "memberships", label: "会员权益" },
+  { id: "single-products", label: "单品" },
   { id: "donate", label: "赞助方式" },
 ];
 let scrollTicking = false;
@@ -244,6 +244,7 @@ const memberships = [
     name: "VIP",
     price: 19,
     renewal: "9 元 / 周目",
+    renewalTip: "每周目也可使用 30 元累计礼包续费",
     open: true,
     stats: ["2000 硬币", "经验 30 级", "5 个家"],
     images: [
@@ -256,6 +257,7 @@ const memberships = [
     name: "VIP+",
     price: 68,
     renewal: "19 元 / 周目",
+    renewalTip: "每周目也可使用 30 元累计礼包续费",
     open: true,
     stats: ["3000 硬币", "经验 60 级", "10 个家"],
     images: [
@@ -268,6 +270,7 @@ const memberships = [
     name: "SVIP",
     price: 168,
     renewal: "39 元 / 周目",
+    renewalTip: "每周目也可使用 60 元累计礼包续费",
     open: true,
     stats: ["6500 硬币", "经验 80 级", "14 个家"],
     images: [
@@ -280,6 +283,7 @@ const memberships = [
     name: "SVIP+",
     price: 328,
     renewal: "39 元 / 周目",
+    renewalTip: "每周目也可使用 60 元累计礼包续费",
     open: true,
     stats: ["8000 硬币", "经验 100 级", "16 个家"],
     images: [
@@ -297,6 +301,7 @@ const memberships = [
     name: "MVP",
     price: 548,
     renewal: "39 元 / 周目",
+    renewalTip: "每周目也可使用 60 元累计礼包续费",
     open: true,
     stats: ["12000 硬币", "经验 140 级", "16 个家"],
     images: [
@@ -412,15 +417,15 @@ async function copyQQ() {
   <div class="sponsor-catalog">
     <header class="sponsor-hero">
       <div class="hero-copy">
-        <p class="eyebrow">新版赞助表</p>
-        <h1>星域世界赞助说明</h1>
+        <p class="eyebrow">新版赞助表试用中，可点击「旧版赞助表」返回旧版。</p>
+        <h1>星域世界赞助表</h1>
         <p class="hero-lead">
           除特别说明外，单品、礼包和附魔均为永久并可跨周目继承；因模组调整无法提供时，可免费更换等价物品。
         </p>
       </div>
       <div class="hero-actions">
         <button class="primary-action" type="button" @click="copyQQ">
-          {{ copied ? "QQ 已复制" : "复制 QQ 934664404" }}
+          {{ copied ? "服主 QQ 已复制" : "复制服主 QQ 934664404" }}
         </button>
         <a class="secondary-action" href="/sponsor.html">旧版赞助表</a>
       </div>
@@ -518,8 +523,14 @@ async function copyQQ() {
         </div>
         <p>不玩不续费，续费资格永久保留；可通过补差价升级。</p>
       </div>
+      <article class="membership-feature">
+        <div>
+          <h3>YSM 模型无限量授权</h3>
+          <p>VIP+ 及以上会员可获得 YSM 模型无限量授权，将希望使用的模型文件发给服主即可。</p>
+        </div>
+      </article>
       <div class="notice">
-        第二十周目所有会员礼包均额外赠送三角洲北极星一把。VIP / VIP+ 可通过 30 元累计礼包续费；SVIP 至 MVP 可通过 60 元累计礼包续费。
+        第二十周目所有会员礼包均额外赠送三角洲北极星一把。
       </div>
       <div class="membership-grid">
         <details
@@ -539,6 +550,7 @@ async function copyQQ() {
             <span class="membership-renewal">
               <small>续费方式</small>
               {{ member.renewal }}
+              <em v-if="member.renewalTip">{{ member.renewalTip }}</em>
             </span>
             <span class="membership-price">
               <small>{{ member.priceLabel || "首次赞助" }}</small>
@@ -623,20 +635,16 @@ async function copyQQ() {
           </div>
           <p class="service-description">特殊属性、组合方案或其他定制需求，可直接私聊服主确认。</p>
         </article>
-        <article>
-          <h2>YSM 模型无限量授权</h2>
-          <p>VIP+ 及以上会员可获得 YSM 模型无限量授权，将希望使用的模型文件发给服主即可。</p>
-        </article>
       </div>
     </section>
 
     <section id="donate" class="contact-panel">
       <div>
         <h2>赞助联系服主</h2>
-        <p>QQ：934664404。群主就是服主。</p>
+        <p>可通过 QQ 联系服主进行赞助，服主 QQ：934664404。</p>
       </div>
       <button class="primary-action" type="button" @click="copyQQ">
-        {{ copied ? "QQ 已复制" : "复制 QQ 934664404" }}
+        {{ copied ? "服主 QQ 已复制" : "复制服主 QQ 934664404" }}
       </button>
     </section>
 
@@ -984,7 +992,15 @@ async function copyQQ() {
 }
 
 .milestone-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  display: block;
+  columns: 2 300px;
+  column-gap: 0.85rem;
+}
+
+.milestone-card {
+  width: 100%;
+  margin: 0 0 0.85rem;
+  break-inside: avoid;
 }
 
 .milestone-card > summary {
@@ -1022,6 +1038,29 @@ async function copyQQ() {
 .membership-grid {
   grid-template-columns: 1fr;
   gap: 0.7rem;
+}
+
+.membership-feature {
+  margin-bottom: 0.85rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid #55d497;
+  border-left: 5px solid #10a966;
+  border-radius: 9px;
+  background: linear-gradient(135deg, #e8fff3 0%, #e6f5ff 100%);
+  box-shadow: 0 8px 22px rgba(16, 169, 102, 0.12);
+}
+
+.membership-feature h3 {
+  margin: 0;
+  color: #087747;
+  font-size: 1.05rem;
+}
+
+.membership-feature p {
+  margin: 0;
+  color: #315f4b;
+  font-size: 0.82rem;
+  line-height: 1.55;
 }
 
 .membership-card > summary {
@@ -1098,6 +1137,19 @@ async function copyQQ() {
   color: #46554d;
   font-size: 0.78rem;
   line-height: 1.4;
+}
+
+.membership-renewal em {
+  margin-top: 0.2rem;
+  padding: 0.25rem 0.42rem;
+  border: 1px solid #edcf89;
+  border-radius: 5px;
+  background: #fff7df;
+  color: #8c5b08;
+  font-size: 0.68rem;
+  font-style: normal;
+  font-weight: 750;
+  line-height: 1.35;
 }
 
 .membership-price {
@@ -1251,7 +1303,7 @@ async function copyQQ() {
 
 .service-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.35fr) minmax(0, 0.65fr);
+  grid-template-columns: 1fr;
   gap: 0.85rem;
 }
 
@@ -1459,6 +1511,10 @@ async function copyQQ() {
   .item-grid,
   .milestone-grid {
     grid-template-columns: 1fr;
+  }
+
+  .milestone-grid {
+    columns: 1;
   }
 
   .package-card > summary {
