@@ -1,7 +1,16 @@
 <script setup>
-import { ref } from "vue";
+import { onBeforeUnmount, onMounted, ref } from "vue";
 
 const copied = ref(false);
+const activeSection = ref("");
+const sectionLinks = [
+  { id: "single-products", label: "单品" },
+  { id: "permanent-packages", label: "永久礼包" },
+  { id: "cumulative-packages", label: "累计礼包" },
+  { id: "memberships", label: "会员权益" },
+  { id: "donate", label: "赞助方式" },
+];
+let scrollTicking = false;
 
 const ae = {
   cell64:
@@ -328,6 +337,47 @@ const memberships = [
   },
 ];
 
+function updateActiveSection() {
+  if (scrollTicking) return;
+
+  scrollTicking = true;
+  window.requestAnimationFrame(() => {
+    const reachedPageEnd =
+      Math.ceil(window.innerHeight + window.scrollY) >=
+      document.documentElement.scrollHeight - 4;
+
+    if (reachedPageEnd) {
+      activeSection.value = "donate";
+      scrollTicking = false;
+      return;
+    }
+
+    const marker = window.scrollY + 180;
+    const current = sectionLinks
+      .map(({ id }) => document.getElementById(id))
+      .filter((section) => section && section.offsetTop <= marker)
+      .sort((a, b) => b.offsetTop - a.offsetTop)[0];
+
+    activeSection.value = current?.id || "";
+    scrollTicking = false;
+  });
+}
+
+function selectSection(id) {
+  activeSection.value = id;
+}
+
+onMounted(() => {
+  window.addEventListener("scroll", updateActiveSection, { passive: true });
+  window.addEventListener("resize", updateActiveSection);
+  updateActiveSection();
+});
+
+onBeforeUnmount(() => {
+  window.removeEventListener("scroll", updateActiveSection);
+  window.removeEventListener("resize", updateActiveSection);
+});
+
 async function copyQQ() {
   try {
     await navigator.clipboard.writeText("934664404");
@@ -345,32 +395,30 @@ async function copyQQ() {
   <div class="sponsor-catalog">
     <header class="sponsor-hero">
       <div class="hero-copy">
-        <p class="eyebrow">新版赞助表 · 试运行</p>
+        <p class="eyebrow">新版赞助表</p>
         <h1>星域世界赞助说明</h1>
         <p class="hero-lead">
-          除特别说明外，单品、礼包和附魔均为永久，可在每周目继承。永久物品若因模组调整无法继续提供，可免费更换等价物品。
+          除特别说明外，单品、礼包和附魔均为永久并可跨周目继承；因模组调整无法提供时，可免费更换等价物品。
         </p>
-        <div class="hero-points">
-          <span><strong>永久物品</strong> 每周目继承</span>
-          <span><strong>内容完整</strong> 展开即可逐项核对</span>
-          <span><strong>直接联系</strong> 群主即服主</span>
-        </div>
       </div>
       <div class="hero-actions">
         <button class="primary-action" type="button" @click="copyQQ">
-          {{ copied ? "QQ 已复制" : "复制服主 QQ 934664404" }}
+          {{ copied ? "QQ 已复制" : "复制 QQ 934664404" }}
         </button>
-        <a class="secondary-action" href="/sponsor.html">查看旧版赞助表</a>
-        <small>新版试运行中，可随时切换回旧版</small>
+        <a class="secondary-action" href="/sponsor.html">旧版赞助表</a>
       </div>
     </header>
 
     <nav class="section-nav" aria-label="赞助表内容导航">
-      <a href="#single-products">单品</a>
-      <a class="active" href="#permanent-packages">永久礼包</a>
-      <a href="#cumulative-packages">累计礼包</a>
-      <a href="#memberships">会员权益</a>
-      <a href="#donate">赞助方式</a>
+      <a
+        v-for="link in sectionLinks"
+        :key="link.id"
+        :href="`#${link.id}`"
+        :class="{ active: activeSection === link.id }"
+        @click="selectSection(link.id)"
+      >
+        {{ link.label }}
+      </a>
     </nav>
 
     <section id="permanent-packages" class="catalog-section">
@@ -466,9 +514,16 @@ async function copyQQ() {
           class="membership-card"
         >
           <summary>
-            <span class="membership-title">
+            <span class="membership-level">
+              <small>会员等级</small>
               <strong>{{ member.name }}</strong>
-              <small>续费：{{ member.renewal }}</small>
+            </span>
+            <span class="membership-summary-stats">
+              <span v-for="stat in member.stats" :key="stat">{{ stat }}</span>
+            </span>
+            <span class="membership-renewal">
+              <small>续费方式</small>
+              {{ member.renewal }}
             </span>
             <span class="membership-price">
               <small>{{ member.priceLabel || "首次赞助" }}</small>
@@ -476,9 +531,6 @@ async function copyQQ() {
             </span>
           </summary>
           <div class="membership-content">
-            <div class="stat-row">
-              <span v-for="stat in member.stats" :key="stat">{{ stat }}</span>
-            </div>
             <div v-if="member.images" class="benefit-images">
               <a
                 v-for="(image, index) in member.images"
@@ -594,13 +646,14 @@ async function copyQQ() {
 
 .sponsor-hero {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 260px;
-  gap: 2rem;
-  margin: 0 0 1.8rem;
-  padding: 1.65rem;
-  border: 1px solid #bfdbcf;
-  border-radius: 12px;
-  background: #fbfdfc;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 1.25rem;
+  margin: 0 0 1.2rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid #dce5df;
+  border-radius: 9px;
+  background: #f8faf9;
 }
 
 .eyebrow,
@@ -616,36 +669,23 @@ async function copyQQ() {
 .sponsor-hero h1 {
   margin: 0;
   border: 0;
-  font-size: clamp(1.65rem, 3vw, 2.35rem);
-  letter-spacing: -0.035em;
-  line-height: 1.18;
+  font-size: clamp(1.35rem, 2.5vw, 1.65rem);
+  letter-spacing: -0.02em;
+  line-height: 1.25;
 }
 
 .hero-lead {
-  max-width: 690px;
-  margin: 0.85rem 0 1.15rem;
+  max-width: 760px;
+  margin: 0.4rem 0 0;
   color: var(--sponsor-muted);
-  line-height: 1.75;
-}
-
-.hero-points {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.65rem 1.15rem;
-  color: #536276;
-  font-size: 0.9rem;
-}
-
-.hero-points strong {
-  color: var(--sponsor-ink);
+  font-size: 0.86rem;
+  line-height: 1.6;
 }
 
 .hero-actions {
   display: flex;
-  align-items: stretch;
-  justify-content: center;
-  flex-direction: column;
-  gap: 0.65rem;
+  align-items: center;
+  gap: 0.55rem;
 }
 
 .primary-action,
@@ -653,10 +693,11 @@ async function copyQQ() {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 44px;
-  padding: 0.65rem 0.9rem;
-  border-radius: 8px;
+  min-height: 40px;
+  padding: 0.55rem 0.8rem;
+  border-radius: 7px;
   font: inherit;
+  font-size: 0.86rem;
   font-weight: 700;
   text-align: center;
   text-decoration: none;
@@ -687,26 +728,18 @@ async function copyQQ() {
   color: #174f9c;
 }
 
-.hero-actions small {
-  color: #778599;
-  font-size: 0.76rem;
-  line-height: 1.45;
-  text-align: center;
-}
-
 .section-nav {
   position: sticky;
   z-index: 8;
-  top: calc(var(--navbar-height) + 0.5rem);
+  top: var(--navbar-height);
   display: flex;
-  gap: 0.3rem;
-  margin: 0 0 2.4rem;
-  padding: 0.45rem;
+  gap: 0;
+  margin: 0 0 2.2rem;
+  padding: 0.25rem 0;
   overflow-x: auto;
-  border: 1px solid var(--sponsor-border);
-  border-radius: 10px;
-  background: rgba(255, 255, 255, 0.96);
-  box-shadow: 0 6px 18px rgba(24, 41, 68, 0.06);
+  border-top: 1px solid #e5e9e6;
+  border-bottom: 1px solid #e5e9e6;
+  background: rgba(255, 255, 255, 0.98);
   scrollbar-width: none;
 }
 
@@ -716,19 +749,23 @@ async function copyQQ() {
 
 .section-nav a {
   flex: 1 0 max-content;
-  padding: 0.6rem 0.85rem;
-  border-radius: 7px;
-  color: #3e4e64;
-  font-size: 0.9rem;
-  font-weight: 650;
+  padding: 0.62rem 0.85rem 0.55rem;
+  border-bottom: 2px solid transparent;
+  color: #5a6875;
+  font-size: 0.86rem;
+  font-weight: 620;
   text-align: center;
   text-decoration: none;
 }
 
 .section-nav a:hover,
-.section-nav a:focus-visible,
+.section-nav a:focus-visible {
+  background: #f4f8f6;
+  color: #08744c;
+}
+
 .section-nav a.active {
-  background: #eaf8f2;
+  border-bottom-color: var(--sponsor-green);
   color: #08744c;
 }
 
@@ -784,22 +821,32 @@ async function copyQQ() {
   background: #fff;
 }
 
-.package-card > summary,
-.membership-card > summary {
+.package-card > summary {
   display: flex;
   align-items: center;
   gap: 0.85rem;
   min-height: 64px;
   padding: 0.9rem 1.15rem;
-  background: var(--sponsor-navy);
-  color: #fff;
+  border-left: 4px solid #c9d8d0;
+  background: #f7faf8;
+  color: var(--sponsor-ink);
   cursor: pointer;
   list-style-position: inside;
 }
 
-.package-card > summary::marker,
-.membership-card > summary::marker {
-  color: #cbd9e8;
+.package-card > summary:hover,
+.package-card > summary:focus-visible {
+  background: #f0f7f3;
+}
+
+.package-card[open] > summary {
+  border-bottom: 1px solid #dfe8e3;
+  border-left-color: var(--sponsor-green);
+  background: #f1f8f4;
+}
+
+.package-card > summary::marker {
+  color: #73877c;
 }
 
 .package-name {
@@ -810,20 +857,22 @@ async function copyQQ() {
 .price-badge {
   flex: none;
   padding: 0.35rem 0.65rem;
+  border: 1px solid #bbdfcf;
   border-radius: 7px;
-  background: var(--sponsor-blue);
+  background: #e8f6f0;
+  color: #08744c;
   font-weight: 750;
 }
 
 .summary-hint {
   margin-left: auto;
-  color: #c8d6e7;
+  color: #718078;
   font-size: 0.8rem;
 }
 
 .summary-hint-open {
   display: none;
-  color: #7ae0ac;
+  color: #0c8157;
 }
 
 .package-card[open] .summary-hint-open {
@@ -949,62 +998,106 @@ async function copyQQ() {
 }
 
 .membership-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr;
+  gap: 0.7rem;
 }
 
 .membership-card > summary {
-  min-height: 82px;
+  display: grid;
+  grid-template-columns: 110px minmax(220px, 1fr) minmax(150px, auto) 105px;
+  grid-template-areas: "level stats renewal price";
+  align-items: center;
+  gap: 1rem;
+  min-height: 76px;
+  padding: 0.8rem 1rem;
+  background: #fff;
+  color: var(--sponsor-ink);
+  cursor: pointer;
+  list-style-position: inside;
 }
 
-.membership-title {
+.membership-card > summary:hover,
+.membership-card > summary:focus-visible {
+  background: #f8faf9;
+}
+
+.membership-card[open] > summary {
+  border-bottom: 1px solid #e1e7e3;
+  background: #f7faf8;
+}
+
+.membership-card > summary::marker {
+  color: #839087;
+}
+
+.membership-level {
+  grid-area: level;
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
+  gap: 0.15rem;
+  padding-left: 0.7rem;
+  border-left: 3px solid var(--sponsor-green);
 }
 
-.membership-title strong {
-  font-size: 1.15rem;
+.membership-level strong {
+  font-size: 1.12rem;
+  line-height: 1.2;
 }
 
-.membership-title small {
-  color: #c6d4e4;
-  font-size: 0.76rem;
+.membership-level small,
+.membership-renewal small {
+  color: #829087;
+  font-size: 0.68rem;
+  font-weight: 600;
+}
+
+.membership-summary-stats {
+  grid-area: stats;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.membership-summary-stats span {
+  padding: 0.3rem 0.5rem;
+  border: 1px solid #dce5e0;
+  border-radius: 5px;
+  background: #f7f9f8;
+  color: #526159;
+  font-size: 0.75rem;
+  font-weight: 620;
+}
+
+.membership-renewal {
+  grid-area: renewal;
+  display: flex;
+  flex-direction: column;
+  gap: 0.12rem;
+  color: #46554d;
+  font-size: 0.78rem;
+  line-height: 1.4;
 }
 
 .membership-price {
+  grid-area: price;
   display: flex;
   flex-direction: column;
   margin-left: auto;
-  color: #7fb2ff;
-  font-size: 1.3rem;
+  color: #0b7651;
+  font-size: 1.18rem;
   font-weight: 800;
   text-align: right;
 }
 
 .membership-price small {
-  color: #c6d4e4;
+  color: #829087;
   font-size: 0.68rem;
   font-weight: 600;
 }
 
 .membership-content {
-  padding: 1rem;
-}
-
-.stat-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.45rem;
-  margin-bottom: 0.9rem;
-}
-
-.stat-row span {
-  padding: 0.35rem 0.55rem;
-  border-radius: 6px;
-  background: #edf4ff;
-  color: #265a9e;
-  font-size: 0.78rem;
-  font-weight: 650;
+  padding: 1rem 1.15rem 1.15rem;
+  background: #fff;
 }
 
 .benefit-images {
@@ -1164,12 +1257,12 @@ async function copyQQ() {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .hero-actions small {
-    grid-column: 1 / -1;
-  }
-
-  .membership-grid {
-    grid-template-columns: 1fr;
+  .membership-card > summary {
+    grid-template-columns: 100px minmax(0, 1fr) 100px;
+    grid-template-areas:
+      "level stats price"
+      "level renewal price";
+    gap: 0.45rem 0.85rem;
   }
 
   .service-grid {
@@ -1217,6 +1310,21 @@ async function copyQQ() {
     padding: 0.75rem 0.9rem 1rem;
   }
 
+  .membership-card > summary {
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas:
+      "level price"
+      "stats stats"
+      "renewal renewal";
+    gap: 0.65rem;
+    padding: 0.85rem;
+  }
+
+  .membership-renewal {
+    padding-top: 0.55rem;
+    border-top: 1px solid #e5eae7;
+  }
+
   .contact-panel {
     align-items: stretch;
     flex-direction: column;
@@ -1226,14 +1334,6 @@ async function copyQQ() {
 @media (max-width: 520px) {
   .hero-actions {
     grid-template-columns: 1fr;
-  }
-
-  .hero-actions small {
-    grid-column: auto;
-  }
-
-  .hero-points {
-    flex-direction: column;
   }
 
   .item-row {
