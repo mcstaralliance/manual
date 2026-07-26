@@ -525,7 +525,7 @@ async function copyQQ() {
       </div>
       <article class="membership-feature">
         <div>
-          <h3>YSM 模型无限量授权</h3>
+          <h3>全体会员额外权益</h3>
           <p>VIP+ 及以上会员可获得 YSM 模型无限量授权，将希望使用的模型文件发给服主即可。</p>
         </div>
       </article>
