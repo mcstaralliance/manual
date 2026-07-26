@@ -1,0 +1,33 @@
+.sponsor-version-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 1rem 0 1.5rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid #b9d7ca;
+  border-radius: 10px;
+  background: #f4fbf8;
+  color: #20332b;
+}
+
+.sponsor-version-banner a {
+  flex: none;
+  padding: 0.5rem 0.85rem;
+  border-radius: 7px;
+  background: #0f8f5f;
+  color: #fff;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+@media (max-width: 520px) {
+  .sponsor-version-banner {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .sponsor-version-banner a {
+    text-align: center;
+  }
+}

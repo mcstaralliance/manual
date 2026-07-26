@@ -3,8 +3,13 @@ import { defineUserConfig } from "vuepress";
 import { viteBundler } from "@vuepress/bundler-vite";
 import { googleAnalyticsPlugin } from "@vuepress/plugin-google-analytics";
 import { slimsearchPlugin } from "@vuepress/plugin-slimsearch";
+import { fileURLToPath } from "node:url";
 
 export default defineUserConfig({
+  clientConfigFile: fileURLToPath(new URL("./client.js", import.meta.url)).replaceAll(
+    "\\",
+    "/",
+  ),
   lang: "zh-CN",
   title: "星域世界文档库",
   description: "星域世界的官方文档库",
@@ -44,7 +49,29 @@ export default defineUserConfig({
       },
       {
         text: "赞助表",
-        link: "/sponsor",
+        link: "/sponsor-new",
+        children: [
+          {
+            text: "单品",
+            link: "/sponsor-new.html#single-products",
+          },
+          {
+            text: "永久礼包",
+            link: "/sponsor-new.html#permanent-packages",
+          },
+          {
+            text: "累计礼包",
+            link: "/sponsor-new.html#cumulative-packages",
+          },
+          {
+            text: "会员权益",
+            link: "/sponsor-new.html#memberships",
+          },
+          {
+            text: "赞助方式",
+            link: "/sponsor-new.html#donate",
+          },
+        ],
       },
       {
         text: "功能性方块摆放规范",
