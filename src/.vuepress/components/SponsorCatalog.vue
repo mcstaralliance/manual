@@ -497,7 +497,7 @@ async function copyQQ() {
         <p>达到档位即可领取，并可同时领取之前档位。换周目后重新累计。</p>
       </div>
       <div class="notice">
-        续费会员的赞助金额不计入周目累计赞助。例如累计赞助 550 元，可领取全部五档累计礼包。
+        续费会员的赞助金额不计入周目累计赞助；单周目内累计赞助 550 元，可领取全部五档累计礼包。
       </div>
       <div class="milestone-grid">
         <details
