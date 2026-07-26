@@ -87,6 +87,7 @@ export default defineUserConfig({
     lastUpdatedText: "最后更新 ",
     editLinkText: "帮助我们完善这个页面",
     themePlugins: {
+      mediumZoom: true,
       seo: {
         canonical: "https://docs.mcstaralliance.com",
       },

@@ -127,23 +127,27 @@ const permanentPackages = [
     name: "永久 AE 高级包",
     price: 75,
     items: aeAdvancedItems,
+    open: true,
   },
   {
     name: "永久 MEK 基础包",
     price: 45,
     image: "https://s2.loli.net/2025/07/15/2LCiufEAvsHklZ9.png",
     imageAlt: "永久 MEK 基础包完整物品图",
+    open: true,
   },
   {
     name: "永久 MEK 高级包",
     price: 75,
     image: "https://s2.loli.net/2025/07/15/EhJb2YIBu6dUQ19.png",
     imageAlt: "永久 MEK 高级包完整物品图",
+    open: true,
   },
   {
     name: "永久高级植物包",
     price: 49,
     items: plantItems,
+    open: true,
   },
 ];
 
@@ -171,6 +175,12 @@ const singleProducts = [
   ["刷怪笼", "100", "永久", "自选要刷的怪物"],
   ["寰宇支配之剑", "1000", "永久", ""],
   ["无尽套", "1500", "永久", ""],
+  [
+    "永久独立世界",
+    "399",
+    "永久",
+    "可邀请其他玩家进入，大小和资源不限；管理员可协助平地、搬迁和回档",
+  ],
   ["私人定制子服", "900", "2 周目", "可定制 Mod、插件、封禁物品等，详情私聊服主"],
   ["64k 存储元件", "5", "一次性", ""],
   ["超级派蒙旋风矿机 Lite", "199", "永久", "25 秒生产一次，每 Tick 需要 200 FE"],
@@ -234,6 +244,7 @@ const memberships = [
     name: "VIP",
     price: 19,
     renewal: "9 元 / 周目",
+    open: true,
     stats: ["2000 硬币", "经验 30 级", "5 个家"],
     images: [
       "https://resource.mcstaralliance.com/images/starcraft/vip-1.png",
@@ -245,6 +256,7 @@ const memberships = [
     name: "VIP+",
     price: 68,
     renewal: "19 元 / 周目",
+    open: true,
     stats: ["3000 硬币", "经验 60 级", "10 个家"],
     images: [
       "https://resource.mcstaralliance.com/images/starcraft/vip%2B-1.png",
@@ -256,6 +268,7 @@ const memberships = [
     name: "SVIP",
     price: 168,
     renewal: "39 元 / 周目",
+    open: true,
     stats: ["6500 硬币", "经验 80 级", "14 个家"],
     images: [
       "https://resource.mcstaralliance.com/images/starcraft/svip-1.png",
@@ -267,6 +280,7 @@ const memberships = [
     name: "SVIP+",
     price: 328,
     renewal: "39 元 / 周目",
+    open: true,
     stats: ["8000 硬币", "经验 100 级", "16 个家"],
     images: [
       "https://resource.mcstaralliance.com/images/starcraft/svip%2B-1.png",
@@ -283,6 +297,7 @@ const memberships = [
     name: "MVP",
     price: 548,
     renewal: "39 元 / 周目",
+    open: true,
     stats: ["12000 硬币", "经验 140 级", "16 个家"],
     images: [
       "https://resource.mcstaralliance.com/images/starcraft/mvp-1.png",
@@ -301,6 +316,7 @@ const memberships = [
     name: "MVP+",
     price: 875,
     renewal: "无需续费（限时特惠）",
+    open: true,
     stats: ["20000 硬币", "经验 180 级", "20 个家"],
     images: [
       "https://resource.mcstaralliance.com/images/starcraft/mvp%2B-1.png",
@@ -322,6 +338,7 @@ const memberships = [
     price: 1888,
     priceLabel: "获得条件",
     renewal: "游玩的周目累计赞助 200 元",
+    open: true,
     stats: ["MVP+ 礼包及特权", "80000 硬币", "每周目 2 次珍稀抽奖"],
     privileges: [
       "所有颜色鸡、8 个鸡舍、4 级鸡饲料、训练鸡器、灵魂提取器",
@@ -424,7 +441,6 @@ async function copyQQ() {
     <section id="permanent-packages" class="catalog-section">
       <div class="section-heading">
         <div>
-          <p class="section-kicker">礼包内容</p>
           <h2>永久礼包</h2>
         </div>
         <p>一次购买，永久拥有。点击礼包标题展开完整清单。</p>
@@ -471,7 +487,6 @@ async function copyQQ() {
     <section id="cumulative-packages" class="catalog-section">
       <div class="section-heading">
         <div>
-          <p class="section-kicker">本周目进度</p>
           <h2>周目累计赞助礼包</h2>
         </div>
         <p>达到档位即可领取，并可同时领取之前档位。换周目后重新累计。</p>
@@ -499,7 +514,6 @@ async function copyQQ() {
     <section id="memberships" class="catalog-section">
       <div class="section-heading">
         <div>
-          <p class="section-kicker">按游玩周目续费</p>
           <h2>会员权益</h2>
         </div>
         <p>不玩不续费，续费资格永久保留；可通过补差价升级。</p>
@@ -512,6 +526,7 @@ async function copyQQ() {
           v-for="member in memberships"
           :key="member.name"
           class="membership-card"
+          :open="member.open"
         >
           <summary>
             <span class="membership-level">
@@ -532,19 +547,13 @@ async function copyQQ() {
           </summary>
           <div class="membership-content">
             <div v-if="member.images" class="benefit-images">
-              <a
+              <img
                 v-for="(image, index) in member.images"
                 :key="image"
-                :href="image"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  :src="image"
-                  :alt="`${member.name} 礼包物品图 ${index + 1}`"
-                  loading="lazy"
-                />
-              </a>
+                :src="image"
+                :alt="`${member.name} 礼包物品图 ${index + 1}`"
+                loading="lazy"
+              />
             </div>
             <h3>权益清单</h3>
             <ul class="privilege-list">
@@ -555,16 +564,21 @@ async function copyQQ() {
       </div>
     </section>
 
-    <section id="single-products" class="catalog-section">
+    <section id="single-products" class="catalog-section single-products-section">
       <div class="section-heading">
         <div>
-          <p class="section-kicker">按需选择</p>
           <h2>单品</h2>
         </div>
         <p>支持购买更多其他单品，有需要可直接联系服主。</p>
       </div>
       <div class="product-table-wrap">
         <table class="product-table">
+          <colgroup>
+            <col class="product-name-column" />
+            <col class="product-price-column" />
+            <col class="product-duration-column" />
+            <col class="product-note-column" />
+          </colgroup>
           <thead>
             <tr>
               <th>名称</th>
@@ -577,8 +591,8 @@ async function copyQQ() {
             <tr v-for="product in singleProducts" :key="product[0]">
               <th>{{ product[0] }}</th>
               <td class="table-price">{{ product[1] }}</td>
-              <td>{{ product[2] }}</td>
-              <td>{{ product[3] || "—" }}</td>
+              <td class="table-duration">{{ product[2] }}</td>
+              <td class="table-note">{{ product[3] || "—" }}</td>
             </tr>
           </tbody>
         </table>
@@ -587,38 +601,45 @@ async function copyQQ() {
 
     <section class="catalog-section compact-section">
       <div class="service-grid">
-        <article>
-          <p class="section-kicker">永久定制</p>
-          <h2>附魔</h2>
-          <p>任意一个属性一级 3 元；抢夺、时运 6 元一级。其他定制需求可私聊服主。</p>
+        <article class="enchant-product">
+          <div class="service-title-row">
+            <div>
+              <h2>永久附魔定制</h2>
+              <p>按选择的属性和等级计价，可组合购买。</p>
+            </div>
+            <span>永久生效</span>
+          </div>
+          <div class="enchant-prices">
+            <div class="enchant-tier">
+              <span class="tier-label">常规属性</span>
+              <p><strong>¥3</strong><span>/ 属性 / 级</span></p>
+              <small>适用于抢夺、时运以外的可选属性</small>
+            </div>
+            <div class="enchant-tier enchant-tier-premium">
+              <span class="tier-label">稀有收益属性</span>
+              <p><strong>¥6</strong><span>/ 属性 / 级</span></p>
+              <small>仅适用于抢夺、时运</small>
+            </div>
+          </div>
+          <p class="service-description">特殊属性、组合方案或其他定制需求，可直接私聊服主确认。</p>
         </article>
         <article>
-          <p class="section-kicker">会员附加权益</p>
           <h2>YSM 模型无限量授权</h2>
           <p>VIP+ 及以上会员可获得 YSM 模型无限量授权，将希望使用的模型文件发给服主即可。</p>
-        </article>
-        <article>
-          <p class="section-kicker">长期空间</p>
-          <h2>永久独立世界 · ¥399</h2>
-          <p>可邀请其他玩家进入，大小和资源不限；管理员可协助平地、搬迁和回档。</p>
         </article>
       </div>
     </section>
 
     <section id="donate" class="contact-panel">
       <div>
-        <p class="section-kicker">准备好了？</p>
-        <h2>通过 QQ 联系服主</h2>
-        <p>QQ：934664404。群主就是服主，确认礼包内容后再完成赞助。</p>
+        <h2>赞助联系服主</h2>
+        <p>QQ：934664404。群主就是服主。</p>
       </div>
       <button class="primary-action" type="button" @click="copyQQ">
         {{ copied ? "QQ 已复制" : "复制 QQ 934664404" }}
       </button>
     </section>
 
-    <footer class="asset-note">
-      AE2 与 Botania 物品图标来自对应模组的官方资源；礼包名称、数量和价格沿用旧版赞助表。
-    </footer>
   </div>
 </template>
 
@@ -656,8 +677,7 @@ async function copyQQ() {
   background: #f8faf9;
 }
 
-.eyebrow,
-.section-kicker {
+.eyebrow {
   margin: 0 0 0.4rem;
   color: var(--sponsor-green);
   font-size: 0.78rem;
@@ -884,7 +904,7 @@ async function copyQQ() {
 }
 
 .package-content {
-  padding: 1.25rem;
+  padding: 1rem 1.1rem;
 }
 
 .item-grid {
@@ -895,39 +915,41 @@ async function copyQQ() {
 
 .item-row {
   display: grid;
-  grid-template-columns: 54px minmax(0, 1fr) auto;
+  grid-template-columns: 44px minmax(0, 1fr) auto;
   align-items: center;
-  gap: 0.75rem;
-  min-height: 70px;
+  gap: 0.6rem;
+  min-height: 56px;
   border-bottom: 1px solid #e6ebf1;
 }
 
 .item-icon {
   display: grid;
-  width: 48px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
   place-items: center;
   overflow: hidden;
   border: 1px solid #dce3ea;
-  border-radius: 8px;
+  border-radius: 7px;
   background: #f4f7fa;
 }
 
 .item-icon img {
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   object-fit: contain;
   image-rendering: pixelated;
 }
 
 .item-name {
   min-width: 0;
+  font-size: 0.84rem;
   font-weight: 620;
   line-height: 1.35;
 }
 
 .item-qty {
   color: #33445a;
+  font-size: 0.82rem;
   font-variant-numeric: tabular-nums;
 }
 
@@ -1106,18 +1128,13 @@ async function copyQQ() {
   gap: 0.55rem;
 }
 
-.benefit-images a {
-  display: block;
-  overflow: hidden;
-  border: 1px solid #e2e8ef;
-  border-radius: 7px;
-  background: #f8fafc;
-}
-
 .benefit-images img {
   display: block;
   width: 100%;
   height: auto;
+  border: 1px solid #e2e8ef;
+  border-radius: 7px;
+  background: #f8fafc;
 }
 
 .membership-content h3 {
@@ -1139,43 +1156,75 @@ async function copyQQ() {
   margin-bottom: 0.25rem;
 }
 
+.single-products-section {
+  width: min(1080px, calc(100vw - var(--sidebar-width, 20rem) - 2.5rem));
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
 .product-table-wrap {
   overflow-x: auto;
-  border: 1px solid var(--sponsor-border);
-  border-radius: 10px;
+  border: 1px solid #cfddd5;
+  border-radius: 9px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(30, 66, 50, 0.05);
 }
 
 .product-table {
   width: 100%;
+  min-width: 820px;
   margin: 0;
   border: 0;
   border-collapse: collapse;
-  font-size: 0.87rem;
+  table-layout: fixed;
+  font-size: 0.88rem;
+}
+
+.product-name-column {
+  width: 29%;
+}
+
+.product-price-column {
+  width: 14%;
+}
+
+.product-duration-column {
+  width: 18%;
+}
+
+.product-note-column {
+  width: 39%;
 }
 
 .product-table th,
 .product-table td {
-  padding: 0.75rem;
+  padding: 0.82rem 1rem;
   border: 0;
-  border-bottom: 1px solid #e5eaf0;
+  border-bottom: 1px solid #e3ebe6;
   text-align: left;
-  vertical-align: top;
+  vertical-align: middle;
 }
 
 .product-table thead th {
-  background: var(--sponsor-navy);
-  color: #fff;
-  font-size: 0.8rem;
+  border-bottom: 1px solid #bdd8ca;
+  background: #eaf5ef;
+  color: #315f4a;
+  font-size: 0.78rem;
+  font-weight: 750;
   letter-spacing: 0.02em;
 }
 
 .product-table tbody th {
-  min-width: 150px;
   color: var(--sponsor-ink);
+  font-weight: 680;
 }
 
 .product-table tbody tr:nth-child(even) {
-  background: #f8fafc;
+  background: #f8fbf9;
+}
+
+.product-table tbody tr:hover {
+  background: #eef7f2;
 }
 
 .product-table tbody tr:last-child th,
@@ -1184,14 +1233,25 @@ async function copyQQ() {
 }
 
 .table-price {
-  color: #1666ce;
-  font-weight: 750;
+  color: #0b7a53;
+  font-size: 0.92rem;
+  font-weight: 800;
   white-space: nowrap;
+}
+
+.table-duration {
+  color: #415449;
+  font-weight: 620;
+}
+
+.table-note {
+  color: #66766d;
+  line-height: 1.55;
 }
 
 .service-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 0.65fr);
   gap: 0.85rem;
 }
 
@@ -1206,11 +1266,106 @@ async function copyQQ() {
   font-size: 1.05rem;
 }
 
+.service-title-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.service-title-row h2 {
+  margin: 0;
+}
+
+.service-title-row span {
+  flex: none;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #b8decd;
+  border-radius: 999px;
+  background: #e6f6ee;
+  color: #08744c;
+  font-size: 0.72rem;
+  font-weight: 720;
+}
+
+.service-grid .enchant-product {
+  border-color: #9fcfba;
+  background: linear-gradient(135deg, #f3fbf7 0%, #e8f6ef 100%);
+  box-shadow: 0 8px 22px rgba(20, 105, 72, 0.08);
+}
+
+.enchant-prices {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.55rem;
+  margin-top: 0.9rem;
+}
+
+.enchant-tier {
+  padding: 0.75rem;
+  border: 1px solid #c7dfd3;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.78);
+}
+
+.enchant-tier-premium {
+  border-color: #e4c98e;
+  background: #fffaf0;
+}
+
+.tier-label {
+  color: #4b6859;
+  font-size: 0.72rem;
+  font-weight: 750;
+}
+
+.enchant-tier-premium .tier-label,
+.enchant-tier-premium strong {
+  color: #9a6410;
+}
+
+.service-grid .enchant-tier p {
+  display: flex;
+  align-items: baseline;
+  gap: 0.35rem;
+  margin: 0.35rem 0 0.2rem;
+  color: #52655b;
+}
+
+.enchant-prices strong {
+  color: #08744c;
+  font-size: 1.45rem;
+  line-height: 1;
+}
+
+.enchant-prices span {
+  font-size: 0.75rem;
+  font-weight: 620;
+}
+
+.enchant-tier small {
+  display: block;
+  color: #718078;
+  font-size: 0.7rem;
+  line-height: 1.45;
+}
+
 .service-grid p:last-child {
   margin: 0.65rem 0 0;
   color: var(--sponsor-muted);
   font-size: 0.88rem;
   line-height: 1.65;
+}
+
+.service-grid .service-title-row p {
+  margin: 0.3rem 0 0;
+  color: #5c7166;
+  font-size: 0.78rem;
+}
+
+.service-grid .enchant-product .service-description {
+  margin-top: 0.8rem;
+  color: #50675b;
 }
 
 .contact-panel {
@@ -1220,31 +1375,33 @@ async function copyQQ() {
   gap: 1.5rem;
   margin: 0 0 1.5rem;
   padding: 1.4rem;
-  border-radius: 12px;
-  background: var(--sponsor-navy);
-  color: #fff;
+  border: 1px solid #b9d8c8;
+  border-radius: 11px;
+  background: linear-gradient(135deg, #f3faf6 0%, #e8f4ed 100%);
+  color: var(--sponsor-ink);
   scroll-margin-top: calc(var(--navbar-height) + 6rem);
 }
 
 .contact-panel h2 {
-  color: #fff;
+  color: #193b2c;
 }
 
 .contact-panel p:last-child {
   margin: 0.45rem 0 0;
-  color: #cbd7e6;
+  color: #587064;
 }
 
 .contact-panel .primary-action {
   flex: none;
+  border-color: #0b7a53;
+  background: #0b7a53;
+  box-shadow: 0 5px 14px rgba(11, 122, 83, 0.18);
 }
 
-.asset-note {
-  margin-bottom: 1rem;
-  color: #7a8798;
-  font-size: 0.75rem;
-  line-height: 1.55;
-  text-align: center;
+.contact-panel .primary-action:hover,
+.contact-panel .primary-action:focus-visible {
+  border-color: #075f40;
+  background: #075f40;
 }
 
 @media (max-width: 900px) {
@@ -1267,6 +1424,14 @@ async function copyQQ() {
 
   .service-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 959px) {
+  .single-products-section {
+    width: auto;
+    margin-left: 0;
+    transform: none;
   }
 }
 
@@ -1337,18 +1502,18 @@ async function copyQQ() {
   }
 
   .item-row {
-    grid-template-columns: 48px minmax(0, 1fr) auto;
-    min-height: 64px;
+    grid-template-columns: 40px minmax(0, 1fr) auto;
+    min-height: 54px;
   }
 
   .item-icon {
-    width: 42px;
-    height: 42px;
+    width: 36px;
+    height: 36px;
   }
 
   .item-icon img {
-    width: 36px;
-    height: 36px;
+    width: 30px;
+    height: 30px;
   }
 
   .package-name {
