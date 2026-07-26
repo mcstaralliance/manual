@@ -527,11 +527,9 @@ async function copyQQ() {
         <div>
           <h3>全体会员额外权益</h3>
           <p>VIP+ 及以上会员可获得 YSM 模型无限量授权，将希望使用的模型文件发给服主即可。</p>
+          <p>第二十一周目所有会员礼包均额外赠送三角洲北极星一把</p>
         </div>
       </article>
-      <div class="notice">
-        第二十周目所有会员礼包均额外赠送三角洲北极星一把。
-      </div>
       <div class="membership-grid">
         <details
           v-for="member in memberships"
