@@ -341,12 +341,11 @@ const memberships = [
   {
     name: "超新星",
     price: 1888,
-    priceLabel: "获得条件",
+    priceLabel: "累计赞助",
     renewal: "游玩的周目累计赞助 200 元",
     open: true,
     stats: ["MVP+ 礼包及特权", "80000 硬币", "每周目 2 次珍稀抽奖"],
     privileges: [
-      "所有颜色鸡、8 个鸡舍、4 级鸡饲料、训练鸡器、灵魂提取器",
       "每周目指定一名玩家，赠送 VIP 至 SVIP 任意一级会员（一周目）",
       "定制一把任意等级附魔武器或其他装备",
       "压缩加速火把 ×2",
@@ -550,7 +549,7 @@ async function copyQQ() {
               <em v-if="member.renewalTip">{{ member.renewalTip }}</em>
             </span>
             <span class="membership-price">
-              <small>{{ member.priceLabel || "首次赞助" }}</small>
+              <small>{{ member.priceLabel || "开通价格" }}</small>
               ¥{{ member.price }}
             </span>
           </summary>
