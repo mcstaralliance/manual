@@ -6,11 +6,23 @@ const activeSection = ref("");
 const sectionLinks = [
   { id: "permanent-packages", label: "永久礼包" },
   { id: "cumulative-packages", label: "累计礼包" },
-  { id: "memberships", label: "会员权益" },
+  { id: "memberships", label: "会员套餐" },
   { id: "single-products", label: "单品" },
   { id: "donate", label: "赞助方式" },
 ];
 let scrollTicking = false;
+let pendingSection = "";
+let pendingSectionTimer;
+
+function setActiveSection(id) {
+  activeSection.value = id;
+
+  document
+    .querySelectorAll('.vp-sidebar a[href*="/sponsor-new.html#"]')
+    .forEach((link) => {
+      link.classList.toggle("sponsor-section-active", link.hash === `#${id}`);
+    });
+}
 
 const ae = {
   cell64:
@@ -363,12 +375,18 @@ function updateActiveSection() {
 
   scrollTicking = true;
   window.requestAnimationFrame(() => {
+    if (pendingSection) {
+      setActiveSection(pendingSection);
+      scrollTicking = false;
+      return;
+    }
+
     const reachedPageEnd =
       Math.ceil(window.innerHeight + window.scrollY) >=
       document.documentElement.scrollHeight - 4;
 
     if (reachedPageEnd) {
-      activeSection.value = "donate";
+      setActiveSection("donate");
       scrollTicking = false;
       return;
     }
@@ -379,13 +397,19 @@ function updateActiveSection() {
       .filter((section) => section && section.offsetTop <= marker)
       .sort((a, b) => b.offsetTop - a.offsetTop)[0];
 
-    activeSection.value = current?.id || "";
+    setActiveSection(current?.id || "");
     scrollTicking = false;
   });
 }
 
 function selectSection(id) {
-  activeSection.value = id;
+  setActiveSection(id);
+  pendingSection = id;
+  window.clearTimeout(pendingSectionTimer);
+  pendingSectionTimer = window.setTimeout(() => {
+    pendingSection = "";
+    updateActiveSection();
+  }, 1200);
 }
 
 onMounted(() => {
@@ -395,8 +419,12 @@ onMounted(() => {
 });
 
 onBeforeUnmount(() => {
+  window.clearTimeout(pendingSectionTimer);
   window.removeEventListener("scroll", updateActiveSection);
   window.removeEventListener("resize", updateActiveSection);
+  document
+    .querySelectorAll(".vp-sidebar .sponsor-section-active")
+    .forEach((link) => link.classList.remove("sponsor-section-active"));
 });
 
 async function copyQQ() {
@@ -517,7 +545,7 @@ async function copyQQ() {
     <section id="memberships" class="catalog-section">
       <div class="section-heading">
         <div>
-          <h2>会员权益</h2>
+          <h2>会员套餐</h2>
         </div>
         <p>不玩不续费，续费资格永久保留；可通过补差价升级。</p>
       </div>
@@ -525,17 +553,15 @@ async function copyQQ() {
         <div>
           <h3>额外权益</h3>
           <p>VIP+ 及以上会员可获得 YSM 模型无限量授权，将希望使用的模型文件发给服主即可。</p>
-          <p>第二十一周目所有会员礼包均额外赠送三角洲北极星一把</p>
         </div>
       </article>
       <div class="membership-grid">
-        <details
+        <article
           v-for="member in memberships"
           :key="member.name"
           class="membership-card"
-          :open="member.open"
         >
-          <summary>
+          <div class="membership-card-header">
             <span class="membership-level">
               <small>会员等级</small>
               <strong>{{ member.name }}</strong>
@@ -552,7 +578,7 @@ async function copyQQ() {
               <small>{{ member.priceLabel || "开通价格" }}</small>
               ¥{{ member.price }}
             </span>
-          </summary>
+          </div>
           <div class="membership-content">
             <div v-if="member.images" class="benefit-images">
               <img
@@ -568,7 +594,7 @@ async function copyQQ() {
               <li v-for="item in member.privileges" :key="item">{{ item }}</li>
             </ul>
           </div>
-        </details>
+        </article>
       </div>
     </section>
 
@@ -648,6 +674,8 @@ async function copyQQ() {
 </template>
 
 <style scoped>
+@import url("https://cdn.jsdelivr.net/npm/@fontsource-variable/noto-sans-sc@5.3.0/index.css");
+
 .sponsor-catalog {
   --sponsor-ink: #17233b;
   --sponsor-muted: #607086;
@@ -657,16 +685,37 @@ async function copyQQ() {
   --sponsor-border: #d9e1ea;
   --sponsor-panel: #f7f9fc;
   color: var(--sponsor-ink);
+  font-family:
+    "PingFang SC", "Noto Sans SC Variable", "Microsoft YaHei UI",
+    "Noto Sans CJK SC", "Noto Sans SC", system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-variant-numeric: tabular-nums;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 .sponsor-catalog * {
   box-sizing: border-box;
 }
 
+:global(.vp-sidebar a[href*="/sponsor-new.html#"].active) {
+  color: var(--c-text, #3c3c43) !important;
+  font-weight: 400 !important;
+}
+
+:global(.vp-sidebar a[href*="/sponsor-new.html#"].sponsor-section-active) {
+  color: var(--c-brand, #299764) !important;
+  font-weight: 600 !important;
+}
+
 .sponsor-catalog h1,
 .sponsor-catalog h2,
 .sponsor-catalog h3 {
   padding-top: 0 !important;
+  font-family:
+    "PingFang SC", "Noto Sans SC Variable", "Microsoft YaHei UI",
+    "Noto Sans CJK SC", "Noto Sans SC", system-ui, sans-serif;
+  letter-spacing: -0.015em;
 }
 
 .sponsor-hero {
@@ -755,15 +804,26 @@ async function copyQQ() {
 .section-nav {
   position: sticky;
   z-index: 8;
-  top: var(--navbar-height);
+  isolation: isolate;
+  top: calc(var(--navbar-height) + 0.5rem);
   display: flex;
-  gap: 0;
+  gap: 0.35rem;
   margin: 0 0 2.2rem;
-  padding: 0.25rem 0;
+  padding: 0.38rem;
   overflow-x: auto;
-  border-top: 1px solid #e5e9e6;
-  border-bottom: 1px solid #e5e9e6;
-  background: rgba(255, 255, 255, 0.98);
+  border: 1px solid rgba(183, 205, 193, 0.72);
+  border-radius: 14px;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.72) 0%,
+      rgba(235, 246, 240, 0.66) 100%
+    );
+  box-shadow:
+    0 12px 28px rgba(20, 64, 45, 0.11),
+    inset 0 1px 0 rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(18px) saturate(155%);
+  -webkit-backdrop-filter: blur(18px) saturate(155%);
   scrollbar-width: none;
 }
 
@@ -772,25 +832,64 @@ async function copyQQ() {
 }
 
 .section-nav a {
+  position: relative;
   flex: 1 0 max-content;
-  padding: 0.62rem 0.85rem 0.55rem;
-  border-bottom: 2px solid transparent;
-  color: #5a6875;
+  padding: 0.58rem 0.82rem;
+  overflow: hidden;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  color: #4f6258;
   font-size: 0.86rem;
   font-weight: 620;
   text-align: center;
   text-decoration: none;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.72);
+  transition:
+    color 160ms ease,
+    border-color 160ms ease,
+    background 160ms ease,
+    box-shadow 160ms ease,
+    transform 160ms ease;
 }
 
 .section-nav a:hover,
 .section-nav a:focus-visible {
-  background: #f4f8f6;
+  border-color: rgba(255, 255, 255, 0.96);
+  background:
+    radial-gradient(
+      circle at 22% -18%,
+      rgba(255, 255, 255, 0.98) 0%,
+      rgba(255, 255, 255, 0.58) 34%,
+      rgba(255, 255, 255, 0) 62%
+    ),
+    linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.72),
+      rgba(207, 241, 226, 0.56)
+    );
   color: #08744c;
+  box-shadow:
+    0 6px 15px rgba(17, 117, 76, 0.14),
+    inset 0 1px 1px rgba(255, 255, 255, 1),
+    inset 0 -1px 1px rgba(54, 154, 108, 0.12);
 }
 
 .section-nav a.active {
-  border-bottom-color: var(--sponsor-green);
-  color: #08744c;
+  border-color: rgba(123, 203, 166, 0.72);
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.96) 0%,
+      rgba(204, 245, 225, 0.82) 52%,
+      rgba(216, 239, 255, 0.9) 100%
+    );
+  color: #067149;
+  box-shadow:
+    0 7px 17px rgba(12, 126, 81, 0.18),
+    0 2px 4px rgba(44, 112, 82, 0.1),
+    inset 0 1px 1px rgba(255, 255, 255, 1),
+    inset 0 -2px 3px rgba(65, 166, 121, 0.1);
+  transform: none;
 }
 
 .catalog-section {
@@ -1057,7 +1156,7 @@ async function copyQQ() {
   line-height: 1.55;
 }
 
-.membership-card > summary {
+.membership-card-header {
   display: grid;
   grid-template-columns: 110px minmax(220px, 1fr) minmax(150px, auto) 105px;
   grid-template-areas: "level stats renewal price";
@@ -1065,24 +1164,9 @@ async function copyQQ() {
   gap: 1rem;
   min-height: 76px;
   padding: 0.8rem 1rem;
-  background: #fff;
-  color: var(--sponsor-ink);
-  cursor: pointer;
-  list-style-position: inside;
-}
-
-.membership-card > summary:hover,
-.membership-card > summary:focus-visible {
-  background: #f8faf9;
-}
-
-.membership-card[open] > summary {
   border-bottom: 1px solid #e1e7e3;
   background: #f7faf8;
-}
-
-.membership-card > summary::marker {
-  color: #839087;
+  color: var(--sponsor-ink);
 }
 
 .membership-level {
@@ -1460,7 +1544,7 @@ async function copyQQ() {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .membership-card > summary {
+  .membership-card-header {
     grid-template-columns: 100px minmax(0, 1fr) 100px;
     grid-template-areas:
       "level stats price"
@@ -1525,7 +1609,7 @@ async function copyQQ() {
     padding: 0.75rem 0.9rem 1rem;
   }
 
-  .membership-card > summary {
+  .membership-card-header {
     grid-template-columns: minmax(0, 1fr) auto;
     grid-template-areas:
       "level price"
