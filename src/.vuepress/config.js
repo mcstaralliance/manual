@@ -52,16 +52,16 @@ export default defineUserConfig({
         link: "/sponsor-new",
         children: [
           {
-            text: "永久礼包",
-            link: "/sponsor-new.html#permanent-packages",
+            text: "会员套餐",
+            link: "/sponsor-new.html#memberships",
           },
           {
             text: "累计礼包",
             link: "/sponsor-new.html#cumulative-packages",
           },
           {
-            text: "会员权益",
-            link: "/sponsor-new.html#memberships",
+            text: "永久礼包",
+            link: "/sponsor-new.html#permanent-packages",
           },
           {
             text: "单品",

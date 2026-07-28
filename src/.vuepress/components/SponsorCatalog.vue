@@ -4,9 +4,9 @@ import { onBeforeUnmount, onMounted, ref } from "vue";
 const copied = ref(false);
 const activeSection = ref("");
 const sectionLinks = [
-  { id: "permanent-packages", label: "永久礼包" },
-  { id: "cumulative-packages", label: "累计礼包" },
   { id: "memberships", label: "会员套餐" },
+  { id: "cumulative-packages", label: "累计礼包" },
+  { id: "permanent-packages", label: "永久礼包" },
   { id: "single-products", label: "单品" },
   { id: "donate", label: "赞助方式" },
 ];
@@ -258,12 +258,12 @@ const memberships = [
     renewal: "9 元 / 周目",
     renewalTip: "每周目也可使用 30 元累计礼包续费",
     open: true,
-    stats: ["2000 硬币", "经验 30 级", "5 个家"],
+    stats: [],
     images: [
       "https://resource.mcstaralliance.com/images/starcraft/vip-1.png",
       "https://resource.mcstaralliance.com/images/starcraft/vip-2.png",
     ],
-    privileges: commonPrivileges,
+    privileges: ["2000 硬币", "经验 30 级", "5 个家", ...commonPrivileges],
   },
   {
     name: "VIP+",
@@ -271,12 +271,18 @@ const memberships = [
     renewal: "19 元 / 周目",
     renewalTip: "每周目也可使用 30 元累计礼包续费",
     open: true,
-    stats: ["3000 硬币", "经验 60 级", "10 个家"],
+    stats: [],
     images: [
       "https://resource.mcstaralliance.com/images/starcraft/vip%2B-1.png",
       "https://resource.mcstaralliance.com/images/starcraft/vip%2B-2.png",
     ],
-    privileges: [...commonPrivileges, "免费授权指定 YSM 模型"],
+    privileges: [
+      "3000 硬币",
+      "经验 60 级",
+      "10 个家",
+      ...commonPrivileges,
+      "免费授权指定 YSM 模型",
+    ],
   },
   {
     name: "SVIP",
@@ -284,12 +290,18 @@ const memberships = [
     renewal: "39 元 / 周目",
     renewalTip: "每周目也可使用 60 元累计礼包续费",
     open: true,
-    stats: ["6500 硬币", "经验 80 级", "14 个家"],
+    stats: [],
     images: [
       "https://resource.mcstaralliance.com/images/starcraft/svip-1.png",
       "https://resource.mcstaralliance.com/images/starcraft/svip-2.png",
     ],
-    privileges: [...commonPrivileges, "免费授权指定 YSM 模型"],
+    privileges: [
+      "6500 硬币",
+      "经验 80 级",
+      "14 个家",
+      ...commonPrivileges,
+      "免费授权指定 YSM 模型",
+    ],
   },
   {
     name: "SVIP+",
@@ -297,13 +309,16 @@ const memberships = [
     renewal: "39 元 / 周目",
     renewalTip: "每周目也可使用 60 元累计礼包续费",
     open: true,
-    stats: ["8000 硬币", "经验 100 级", "16 个家"],
+    stats: [],
     images: [
       "https://resource.mcstaralliance.com/images/starcraft/svip%2B-1.png",
       "https://resource.mcstaralliance.com/images/starcraft/svip%2B-2.png",
       "https://resource.mcstaralliance.com/images/starcraft/after-svip%2B.png",
     ],
     privileges: [
+      "8000 硬币",
+      "经验 100 级",
+      "16 个家",
       ...commonPrivileges,
       "/nohunger switch 自由切换永不饥饿",
       "免费授权指定 YSM 模型",
@@ -315,7 +330,7 @@ const memberships = [
     renewal: "39 元 / 周目",
     renewalTip: "每周目也可使用 60 元累计礼包续费",
     open: true,
-    stats: ["12000 硬币", "经验 140 级", "16 个家"],
+    stats: [],
     images: [
       "https://resource.mcstaralliance.com/images/starcraft/mvp-1.png",
       "https://resource.mcstaralliance.com/images/starcraft/mvp-2.png",
@@ -323,6 +338,9 @@ const memberships = [
       "https://resource.mcstaralliance.com/images/starcraft/after-svip%2B.png",
     ],
     privileges: [
+      "12000 硬币",
+      "经验 140 级",
+      "16 个家",
       ...commonPrivileges,
       "/nohunger switch 自由切换永不饥饿",
       "免费授权指定 YSM 模型",
@@ -334,7 +352,7 @@ const memberships = [
     price: 875,
     renewal: "无需续费（限时特惠）",
     open: true,
-    stats: ["20000 硬币", "经验 180 级", "20 个家"],
+    stats: [],
     images: [
       "https://resource.mcstaralliance.com/images/starcraft/mvp%2B-1.png",
       "https://resource.mcstaralliance.com/images/starcraft/mvp%2B-2.png",
@@ -342,6 +360,9 @@ const memberships = [
       "https://resource.mcstaralliance.com/images/starcraft/mvp%2B-4.png",
     ],
     privileges: [
+      "20000 硬币",
+      "经验 180 级",
+      "20 个家",
       ...commonPrivileges,
       "/heal 回复血量以及饱食度",
       "/nohunger switch 自由切换永不饥饿",
@@ -356,8 +377,12 @@ const memberships = [
     priceLabel: "累计赞助",
     renewal: "游玩的周目累计赞助 200 元",
     open: true,
-    stats: ["MVP+ 礼包及特权", "80000 硬币", "每周目 2 次珍稀抽奖"],
+    acquisition: "累计赞助达到 1888 元即可获得超新星会员",
+    stats: [],
     privileges: [
+      "MVP+ 礼包及特权",
+      "80000 硬币",
+      "每周目 2 次珍稀抽奖",
       "每周目指定一名玩家，赠送 VIP 至 SVIP 任意一级会员（一周目）",
       "定制一把任意等级附魔武器或其他装备",
       "压缩加速火把 ×2",
@@ -470,6 +495,95 @@ async function copyQQ() {
       </a>
     </nav>
 
+    <section id="memberships" class="catalog-section">
+      <div class="section-heading">
+        <div>
+          <h2>会员套餐</h2>
+        </div>
+        <p>不玩不续费，续费资格永久保留；可通过补差价升级。</p>
+      </div>
+      <article class="membership-feature">
+        <div>
+          <h3>额外权益</h3>
+          <p>VIP+ 及以上会员可获得 YSM 模型无限量授权，将希望使用的模型文件发给服主即可。</p>
+        </div>
+      </article>
+      <div class="membership-grid">
+        <article
+          v-for="member in memberships"
+          :key="member.name"
+          class="membership-card"
+        >
+          <div
+            class="membership-card-header"
+            :class="{ 'membership-card-header--compact': !member.stats?.length }"
+          >
+            <span class="membership-level">
+              <small>会员等级</small>
+              <strong>{{ member.name }}</strong>
+            </span>
+            <span v-if="member.stats?.length" class="membership-summary-stats">
+              <span v-for="stat in member.stats" :key="stat">{{ stat }}</span>
+            </span>
+            <span class="membership-renewal">
+              <small>续费方式</small>
+              {{ member.renewal }}
+              <em v-if="member.renewalTip">{{ member.renewalTip }}</em>
+            </span>
+            <span class="membership-price">
+              <small>{{ member.priceLabel || "开通价格" }}</small>
+              ¥{{ member.price }}
+            </span>
+          </div>
+          <div class="membership-content">
+            <p v-if="member.acquisition" class="membership-acquisition">
+              <strong>获得方式</strong>
+              <span>{{ member.acquisition }}</span>
+            </p>
+            <div v-if="member.images" class="benefit-images">
+              <img
+                v-for="(image, index) in member.images"
+                :key="image"
+                :src="image"
+                :alt="`${member.name} 礼包物品图 ${index + 1}`"
+                loading="lazy"
+              />
+            </div>
+            <h3>权益清单</h3>
+            <ul class="privilege-list">
+              <li v-for="item in member.privileges" :key="item">{{ item }}</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="cumulative-packages" class="catalog-section">
+      <div class="section-heading">
+        <div>
+          <h2>周目累计赞助礼包</h2>
+        </div>
+        <p>达到档位即可领取，并可同时领取之前档位。换周目后重新累计。</p>
+      </div>
+      <div class="notice">
+        续费会员的赞助金额不计入周目累计赞助；单周目内累计赞助 550 元，可领取全部五档累计礼包。
+      </div>
+      <div class="milestone-grid">
+        <article
+          v-for="pack in cumulativePackages"
+          :key="pack.amount"
+          class="milestone-card"
+        >
+          <div class="milestone-card-header">
+            <span><strong>累计 ¥{{ pack.amount }}</strong><small>达标可领取</small></span>
+          </div>
+          <ul>
+            <li v-for="item in pack.items" :key="item">{{ item }}</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
     <section id="permanent-packages" class="catalog-section">
       <div class="section-heading">
         <div>
@@ -513,88 +627,6 @@ async function copyQQ() {
             </figure>
           </div>
         </details>
-      </div>
-    </section>
-
-    <section id="cumulative-packages" class="catalog-section">
-      <div class="section-heading">
-        <div>
-          <h2>周目累计赞助礼包</h2>
-        </div>
-        <p>达到档位即可领取，并可同时领取之前档位。换周目后重新累计。</p>
-      </div>
-      <div class="notice">
-        续费会员的赞助金额不计入周目累计赞助；单周目内累计赞助 550 元，可领取全部五档累计礼包。
-      </div>
-      <div class="milestone-grid">
-        <article
-          v-for="pack in cumulativePackages"
-          :key="pack.amount"
-          class="milestone-card"
-        >
-          <div class="milestone-card-header">
-            <span><strong>累计 ¥{{ pack.amount }}</strong><small>达标可领取</small></span>
-          </div>
-          <ul>
-            <li v-for="item in pack.items" :key="item">{{ item }}</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <section id="memberships" class="catalog-section">
-      <div class="section-heading">
-        <div>
-          <h2>会员套餐</h2>
-        </div>
-        <p>不玩不续费，续费资格永久保留；可通过补差价升级。</p>
-      </div>
-      <article class="membership-feature">
-        <div>
-          <h3>额外权益</h3>
-          <p>VIP+ 及以上会员可获得 YSM 模型无限量授权，将希望使用的模型文件发给服主即可。</p>
-        </div>
-      </article>
-      <div class="membership-grid">
-        <article
-          v-for="member in memberships"
-          :key="member.name"
-          class="membership-card"
-        >
-          <div class="membership-card-header">
-            <span class="membership-level">
-              <small>会员等级</small>
-              <strong>{{ member.name }}</strong>
-            </span>
-            <span class="membership-summary-stats">
-              <span v-for="stat in member.stats" :key="stat">{{ stat }}</span>
-            </span>
-            <span class="membership-renewal">
-              <small>续费方式</small>
-              {{ member.renewal }}
-              <em v-if="member.renewalTip">{{ member.renewalTip }}</em>
-            </span>
-            <span class="membership-price">
-              <small>{{ member.priceLabel || "开通价格" }}</small>
-              ¥{{ member.price }}
-            </span>
-          </div>
-          <div class="membership-content">
-            <div v-if="member.images" class="benefit-images">
-              <img
-                v-for="(image, index) in member.images"
-                :key="image"
-                :src="image"
-                :alt="`${member.name} 礼包物品图 ${index + 1}`"
-                loading="lazy"
-              />
-            </div>
-            <h3>权益清单</h3>
-            <ul class="privilege-list">
-              <li v-for="item in member.privileges" :key="item">{{ item }}</li>
-            </ul>
-          </div>
-        </article>
       </div>
     </section>
 
@@ -1169,6 +1201,11 @@ async function copyQQ() {
   color: var(--sponsor-ink);
 }
 
+.membership-card-header--compact {
+  grid-template-columns: 110px minmax(220px, 1fr) 105px;
+  grid-template-areas: "level renewal price";
+}
+
 .membership-level {
   grid-area: level;
   display: flex;
@@ -1250,6 +1287,30 @@ async function copyQQ() {
 .membership-content {
   padding: 1rem 1.15rem 1.15rem;
   background: #fff;
+}
+
+.membership-acquisition {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin: 0 0 1rem;
+  padding: 0.7rem 0.8rem;
+  border: 1px solid #efbd52;
+  border-left: 4px solid #e39500;
+  border-radius: 7px;
+  background: linear-gradient(135deg, #fff8dc, #fff2c2);
+  color: #784800;
+  font-size: 0.88rem;
+  font-weight: 720;
+}
+
+.membership-acquisition strong {
+  flex: 0 0 auto;
+  padding: 0.2rem 0.45rem;
+  border-radius: 4px;
+  background: #e39500;
+  color: #fff;
+  font-size: 0.72rem;
 }
 
 .benefit-images {
@@ -1552,6 +1613,11 @@ async function copyQQ() {
     gap: 0.45rem 0.85rem;
   }
 
+  .membership-card-header--compact {
+    grid-template-columns: 100px minmax(0, 1fr) 100px;
+    grid-template-areas: "level renewal price";
+  }
+
   .service-grid {
     grid-template-columns: 1fr;
   }
@@ -1617,6 +1683,13 @@ async function copyQQ() {
       "renewal renewal";
     gap: 0.65rem;
     padding: 0.85rem;
+  }
+
+  .membership-card-header--compact {
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas:
+      "level price"
+      "renewal renewal";
   }
 
   .membership-renewal {
