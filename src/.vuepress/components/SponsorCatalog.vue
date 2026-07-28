@@ -528,7 +528,14 @@ async function copyQQ() {
             <span class="membership-renewal">
               <small>续费方式</small>
               {{ member.renewal }}
-              <em v-if="member.renewalTip">{{ member.renewalTip }}</em>
+              <a
+                v-if="member.renewalTip"
+                class="membership-renewal-tip"
+                href="#cumulative-packages"
+                @click="selectSection('cumulative-packages')"
+              >
+                {{ member.renewalTip }}
+              </a>
             </span>
             <span class="membership-price">
               <small>{{ member.priceLabel || "开通价格" }}</small>
@@ -1254,7 +1261,8 @@ async function copyQQ() {
   line-height: 1.4;
 }
 
-.membership-renewal em {
+.membership-renewal-tip {
+  align-self: flex-start;
   margin-top: 0.2rem;
   padding: 0.25rem 0.42rem;
   border: 1px solid #edcf89;
@@ -1262,9 +1270,21 @@ async function copyQQ() {
   background: #fff7df;
   color: #8c5b08;
   font-size: 0.68rem;
-  font-style: normal;
   font-weight: 750;
   line-height: 1.35;
+  text-decoration: none !important;
+  transition:
+    border-color 150ms ease,
+    background 150ms ease,
+    color 150ms ease;
+}
+
+.membership-renewal-tip:hover,
+.membership-renewal-tip:focus-visible {
+  border-color: #d7a536;
+  background: #ffedbb;
+  color: #704500;
+  text-decoration: none !important;
 }
 
 .membership-price {
