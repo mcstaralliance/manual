@@ -469,7 +469,6 @@ async function copyQQ() {
   <div class="sponsor-catalog">
     <header class="sponsor-hero">
       <div class="hero-copy">
-        <p class="eyebrow">新版赞助表试用中，可点击「旧版赞助表」返回旧版。</p>
         <h1>星域世界赞助表</h1>
         <p class="hero-lead">
           除特别说明外，单品、礼包和附魔均为永久并可跨周目继承；因模组调整无法提供时，可免费更换等价物品。
@@ -479,7 +478,6 @@ async function copyQQ() {
         <button class="primary-action" type="button" @click="copyQQ">
           {{ copied ? "服主 QQ 已复制" : "复制服主 QQ 934664404" }}
         </button>
-        <a class="secondary-action" href="/sponsor.html">旧版赞助表</a>
       </div>
     </header>
 
@@ -516,7 +514,10 @@ async function copyQQ() {
         >
           <div
             class="membership-card-header"
-            :class="{ 'membership-card-header--compact': !member.stats?.length }"
+            :class="{
+              'membership-card-header--compact': !member.stats?.length,
+              'membership-card-header--no-tip': !member.renewalTip,
+            }"
           >
             <span class="membership-level">
               <small>会员等级</small>
@@ -527,16 +528,16 @@ async function copyQQ() {
             </span>
             <span class="membership-renewal">
               <small>续费方式</small>
-              {{ member.renewal }}
-              <a
-                v-if="member.renewalTip"
-                class="membership-renewal-tip"
-                href="#cumulative-packages"
-                @click="selectSection('cumulative-packages')"
-              >
-                {{ member.renewalTip }}
-              </a>
+              <span class="membership-renewal-value">{{ member.renewal }}</span>
             </span>
+            <a
+              v-if="member.renewalTip"
+              class="membership-renewal-tip"
+              href="#cumulative-packages"
+              @click="selectSection('cumulative-packages')"
+            >
+              {{ member.renewalTip }}
+            </a>
             <span class="membership-price">
               <small>{{ member.priceLabel || "开通价格" }}</small>
               ¥{{ member.price }}
@@ -769,15 +770,6 @@ async function copyQQ() {
   background: #f8faf9;
 }
 
-.eyebrow {
-  margin: 0 0 0.4rem;
-  color: var(--sponsor-green);
-  font-size: 0.78rem;
-  font-weight: 750;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
 .sponsor-hero h1 {
   margin: 0;
   border: 0;
@@ -800,8 +792,7 @@ async function copyQQ() {
   gap: 0.55rem;
 }
 
-.primary-action,
-.secondary-action {
+.primary-action {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -822,22 +813,10 @@ async function copyQQ() {
   color: #fff;
 }
 
-.secondary-action {
-  border: 1px solid var(--sponsor-blue);
-  background: #fff;
-  color: #1f64ca;
-}
-
 .primary-action:hover,
 .primary-action:focus-visible {
   border-color: #155fcf;
   background: #155fcf;
-}
-
-.secondary-action:hover,
-.secondary-action:focus-visible {
-  background: #edf5ff;
-  color: #174f9c;
 }
 
 .section-nav {
@@ -1209,22 +1188,29 @@ async function copyQQ() {
 }
 
 .membership-card-header--compact {
-  grid-template-columns: 110px minmax(220px, 1fr) 105px;
-  grid-template-areas: "level renewal price";
+  grid-template-columns: 110px max-content max-content minmax(0, 1fr) auto;
+  grid-template-areas: "level renewal tip . price";
+  column-gap: 0.8rem;
+}
+
+.membership-card-header--no-tip {
+  grid-template-columns: 110px max-content minmax(0, 1fr) auto;
+  grid-template-areas: "level renewal . price";
 }
 
 .membership-level {
   grid-area: level;
+  align-self: start;
   display: flex;
   flex-direction: column;
-  gap: 0.15rem;
+  gap: 0.1rem;
   padding-left: 0.7rem;
   border-left: 3px solid var(--sponsor-green);
 }
 
 .membership-level strong {
   font-size: 1.12rem;
-  line-height: 1.2;
+  line-height: 1.35rem;
 }
 
 .membership-level small,
@@ -1232,6 +1218,7 @@ async function copyQQ() {
   color: #829087;
   font-size: 0.68rem;
   font-weight: 600;
+  line-height: 1rem;
 }
 
 .membership-summary-stats {
@@ -1253,17 +1240,24 @@ async function copyQQ() {
 
 .membership-renewal {
   grid-area: renewal;
+  align-self: start;
   display: flex;
   flex-direction: column;
-  gap: 0.12rem;
+  gap: 0.1rem;
   color: #46554d;
   font-size: 0.78rem;
   line-height: 1.4;
 }
 
+.membership-renewal-value {
+  line-height: 1.35rem;
+}
+
 .membership-renewal-tip {
+  grid-area: tip;
   align-self: flex-start;
-  margin-top: 0.2rem;
+  justify-self: start;
+  margin-top: 1rem;
   padding: 0.25rem 0.42rem;
   border: 1px solid #edcf89;
   border-radius: 5px;
@@ -1622,7 +1616,7 @@ async function copyQQ() {
 
   .hero-actions {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: max-content;
   }
 
   .membership-card-header {
@@ -1634,8 +1628,14 @@ async function copyQQ() {
   }
 
   .membership-card-header--compact {
-    grid-template-columns: 100px minmax(0, 1fr) 100px;
-    grid-template-areas: "level renewal price";
+    grid-template-columns: 100px max-content max-content minmax(0, 1fr) auto;
+    grid-template-areas: "level renewal tip . price";
+    column-gap: 0.7rem;
+  }
+
+  .membership-card-header--no-tip {
+    grid-template-columns: 100px max-content minmax(0, 1fr) auto;
+    grid-template-areas: "level renewal . price";
   }
 
   .service-grid {
@@ -1709,12 +1709,24 @@ async function copyQQ() {
     grid-template-columns: minmax(0, 1fr) auto;
     grid-template-areas:
       "level price"
+      "renewal renewal"
+      "tip tip";
+  }
+
+  .membership-card-header--no-tip {
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas:
+      "level price"
       "renewal renewal";
   }
 
   .membership-renewal {
     padding-top: 0.55rem;
     border-top: 1px solid #e5eae7;
+  }
+
+  .membership-renewal-tip {
+    margin-top: 0;
   }
 
   .contact-panel {
