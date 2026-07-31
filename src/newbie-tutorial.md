@@ -6,7 +6,7 @@
 
 你的电脑上需要有 Java 才能运行 Minecraft。
 
-群文件里可以找到 Java 的安装包。Minecraft 1.20.1 版本应使用 Java 17。
+群文件里可以找到 Java 的安装包。Minecraft 1.21.1 版本应使用 Java 21。
 
 ## 注册星域账号并进入服务器
 
@@ -16,9 +16,8 @@
 
 2. 根据皮肤站仪表盘的提示正确验证邮箱地址
 
-3. 在 [这里](https://skin.mcstaralliance.com/user/link) 按照操作提示绑定 Fanbook 账号，如果你没有 Fanbook 账号，可以在页面里直接注册。
+3. 在启动器里添加账户，点击 **Celestia Skin** 并输入用户名和密码进行外置登录，[点击这里](https://docs.qq.com/doc/DYUVyb2lPRmhVV3ZN) 可以查看更具体的教程。
 
-4. 在启动器里添加账户，点击 **Celestia Skin** 并输入用户名和密码进行外置登录，[点击这里](https://docs.qq.com/doc/DYUVyb2lPRmhVV3ZN) 可以查看更具体的教程。
 
 
 ::: danger 警告
@@ -35,6 +34,8 @@
 **本服不支持使用正版登录和离线模式。** 请务必在启动器内使用你刚刚注册的 Celestia Skin 账号登录。
 
 ## 圈地
+
+> 本周目为空岛玩法，无需圈地，在这里仅做介绍。
 
 本服使用原版物品「木锄」圈地。
 
