@@ -260,8 +260,7 @@ const memberships = [
     open: true,
     stats: [],
     images: [
-      "https://resource.mcstaralliance.com/images/starcraft/vip-1.png",
-      "https://resource.mcstaralliance.com/images/starcraft/vip-2.png",
+      "https://resource.mcstaralliance.com/images/starcraft21st/vip.png",
     ],
     privileges: ["2000 硬币", "经验 30 级", "5 个家", ...commonPrivileges],
   },
@@ -273,8 +272,7 @@ const memberships = [
     open: true,
     stats: [],
     images: [
-      "https://resource.mcstaralliance.com/images/starcraft/vip%2B-1.png",
-      "https://resource.mcstaralliance.com/images/starcraft/vip%2B-2.png",
+      "https://resource.mcstaralliance.com/images/starcraft21st/vip%2B.png",
     ],
     privileges: [
       "3000 硬币",
@@ -292,8 +290,8 @@ const memberships = [
     open: true,
     stats: [],
     images: [
-      "https://resource.mcstaralliance.com/images/starcraft/svip-1.png",
-      "https://resource.mcstaralliance.com/images/starcraft/svip-2.png",
+      "https://resource.mcstaralliance.com/images/starcraft21st/svip.png",
+      "https://resource.mcstaralliance.com/images/starcraft21st/svip2.png",
     ],
     privileges: [
       "6500 硬币",
@@ -311,9 +309,8 @@ const memberships = [
     open: true,
     stats: [],
     images: [
-      "https://resource.mcstaralliance.com/images/starcraft/svip%2B-1.png",
-      "https://resource.mcstaralliance.com/images/starcraft/svip%2B-2.png",
-      "https://resource.mcstaralliance.com/images/starcraft/after-svip%2B.png",
+      "https://resource.mcstaralliance.com/images/starcraft21st/svip%2B.png",
+      "https://resource.mcstaralliance.com/images/starcraft21st/svip%2B2.png",
     ],
     privileges: [
       "8000 硬币",
@@ -332,10 +329,8 @@ const memberships = [
     open: true,
     stats: [],
     images: [
-      "https://resource.mcstaralliance.com/images/starcraft/mvp-1.png",
-      "https://resource.mcstaralliance.com/images/starcraft/mvp-2.png",
-      "https://resource.mcstaralliance.com/images/starcraft/mvp-3.png",
-      "https://resource.mcstaralliance.com/images/starcraft/after-svip%2B.png",
+      "https://resource.mcstaralliance.com/images/starcraft21st/mvp.png",
+      "https://resource.mcstaralliance.com/images/starcraft21st/mvp2.png",
     ],
     privileges: [
       "12000 硬币",
@@ -354,10 +349,9 @@ const memberships = [
     open: true,
     stats: [],
     images: [
-      "https://resource.mcstaralliance.com/images/starcraft/mvp%2B-1.png",
-      "https://resource.mcstaralliance.com/images/starcraft/mvp%2B-2.png",
-      "https://resource.mcstaralliance.com/images/starcraft/mvp%2B-3.png",
-      "https://resource.mcstaralliance.com/images/starcraft/mvp%2B-4.png",
+      "https://resource.mcstaralliance.com/images/starcraft21st/mvp%2B1.png",
+      "https://resource.mcstaralliance.com/images/starcraft21st/mvp%2B2.png",
+      "https://resource.mcstaralliance.com/images/starcraft21st/mvp%2B3.png",
     ],
     privileges: [
       "20000 硬币",
