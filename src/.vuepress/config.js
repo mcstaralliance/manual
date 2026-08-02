@@ -2,6 +2,7 @@ import { defaultTheme } from "@vuepress/theme-default";
 import { defineUserConfig } from "vuepress";
 import { viteBundler } from "@vuepress/bundler-vite";
 import { googleAnalyticsPlugin } from "@vuepress/plugin-google-analytics";
+import { redirectPlugin } from "@vuepress/plugin-redirect";
 import { slimsearchPlugin } from "@vuepress/plugin-slimsearch";
 import { fileURLToPath } from "node:url";
 
@@ -103,6 +104,7 @@ export default defineUserConfig({
     },
   },
   plugins: [
+    redirectPlugin(),
     slimsearchPlugin({
       indexContent: true,
     }),

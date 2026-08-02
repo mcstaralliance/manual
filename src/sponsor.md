@@ -1,5 +1,6 @@
 ---
 title: 赞助表
+redirectTo: /sponsor-new.html
 ---
 
 # 星域世界赞助表
